@@ -1,0 +1,1361 @@
+@charset "utf-8";
+/* hinh ngoi nha nut tìm kiem  */
+.navigation-card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(255, 255, 255);
+  padding: 1px 20px;
+  border-radius: 50px;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(252, 252, 252);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.tab:hover {
+  background-color: rgb(223, 223, 223);
+}
+ /* ///  */
+
+
+.nav-link{
+    color: rgb(47, 26, 152);
+    font-weight: bold;
+    width: 100px;
+    text-align: justify;
+}
+
+#dropdown{
+    border: 0;
+    margin-left: -10px;
+}
+/* du dung hieu ung cuon  */
+.hidden {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s ease-out, transform 2s ease-out;
+}
+.visible {
+  opacity: 1;
+      transform: translateY(0);
+}
+/* the tim kiem  */
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+#button{
+  color: rgb(47, 26, 152);
+  font-weight: bold;
+  border: 0;
+  text-align: left;
+    
+}
+.nav-link:hover , #button:hover{
+    color: rgb(24, 22, 22);
+    border-bottom: 4px solid rgb(238, 238, 244);
+    border-radius: 0;  
+}
+ul li{
+  position:relative;
+}
+ul li > ul {
+  position:absolute;
+  top:30px;
+  display:none;
+ 
+ 
+}
+ul li > ul li:nth-child(even) {
+  font-weight: bold;
+
+}
+ul li > ul li{
+  padding-left: 10px;
+  font-size: 15px;
+}
+ul li:hover > ul{
+  display:block;
+}
+/* form dang nhap  */
+#DangNhap li a{
+  text-decoration: none;
+  color: black;
+}
+#DangNhap li a:hover {
+  color: red;
+}
+ul li > ul li > ul{
+  position:absolute;
+  top: -10px;
+  left: 155px;
+  display:none;
+}
+#dropdown-item-header{
+    color: rgb(240, 239, 246);
+}
+#roww{
+    clear: both;
+}
+#card-title{
+    margin: 5px;
+    color: rgb(205, 25, 25);
+}
+.home{
+  background-image: linear-gradient(rgb(252, 252, 255), rgb(238, 238, 254));
+}
+.card{
+    padding: 20px;
+}
+  .small-desc {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+    text-align: justify;
+  }
+  
+  
+  
+  #card-body {
+    display: block;
+    position: relative;
+    max-width: 700px;
+    max-height: 320px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, white, #edf4f5);
+  }
+  #card-body:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #6e8eb0, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  #card-body:hover:before {
+    transform: scale(40);
+  }
+  
+  #card-body:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  #card-body:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+/* #row-main .col-md-4{
+  border-radius: 10px 10px 10px 10px;
+   width: 300px;
+   height: 100px;
+}
+#row-main .col-md-4 a{
+    text-decoration: none;
+    color: #f2f8f9;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 25px;
+} */
+/* #row-main .col-md-4 p{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+} */
+/* #Giang_Vien, #Khoa_Hoc{
+    color: rgb(28, 28, 191);
+    font-weight: bold;
+}
+#Sinh_Vien, #Doi_Tac{
+    font-weight: bold;
+}
+#Sinh_Vien{
+    padding-right: 30px;
+} */
+#row-main .card{
+  border: 1px solid rgb(38, 38, 38);
+  transition: 0.5s ease-out;
+}
+#row-main .card a{
+  text-decoration: none;
+  color: rgb(12, 12, 124);
+}
+#row-main .card b{
+  font-size: 35px;
+  color: rgb(12, 12, 124);
+  margin-left: 20px;
+  
+}
+#row-main .card p{
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+#row-main .card:hover{
+  background-color: rgb(207, 22, 22);
+  transform: translateY(-10px);
+
+}
+#row-main .card:hover svg,#row-main .card:hover p{
+ color: white;
+}
+#row-main .card:hover b{
+  color: white;
+}
+#row-main .card:hover a{
+  color: white;
+}
+.Tin_Tuc a{
+    text-decoration: none;
+   color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+.Tin_Tuc a:hover{
+    border-bottom: 5px solid red;
+}
+#row_TT .card a{
+    text-decoration: none;
+    color: rgb(28, 28, 191);
+}
+#row_TT .card a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+#row_TT .card-title {
+    font-weight: bold;
+    color: red;
+}
+#row_TT img{
+  
+  transition: 0.5s ease-out;
+  
+}
+#row_TT img:hover{
+  transform: translateY(-10px);
+}
+ 
+/* tin tức khác */
+#Chuc_Nang_Khac{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    background-color: #24233b;
+    border-radius: 8px;
+    z-index: 1;
+    box-shadow: 0px 10px 10px rgb(73, 70, 92);
+    transition: 0.5s;
+  }
+  
+  #Chuc_Nang_Khac:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 10px black;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .circle {
+    padding: 0 4px;
+  }
+  
+  .circle2 {
+    display: inline-block;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    border-radius: 5px;
+  }
+  
+  .red {
+    background-color: #ff605c;
+  }
+  
+  .yellow {
+    background-color: #ffbd44;
+  }
+  
+  .green {
+    background-color: #00ca4e;
+  }
+  
+  .header {
+    margin: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  #title2 {
+    color: black;
+    padding-left: 50px;
+    font-size: 15px;
+    background-color:white;
+    border-radius:5px 5px 5px 5px;
+    margin-left:30px;
+    font-weight:bold;
+    
+  }
+  
+  .code-container {
+    text-align: center;
+  }
+  
+  #code:focus {
+    outline: none !important;
+  }
+  .title{
+    width: 200px;
+    margin-left: 30px;
+    
+  }
+  .code-container img{
+    border-radius: 5px 5px 5px 5px;
+  }
+  .code-container a{
+    text-align: left;
+    text-decoration: none;
+    color: rgb(28, 28, 191);
+  }
+  .code-container .col-7{
+    text-align: left;
+  }
+ #TinTucKhac{
+  overflow: scroll;
+ }
+ #TinTucKhac img{
+  transition: 0.5s ease-out;
+ }
+ #TinTucKhac img:hover{
+  transform: translateY(-5px);
+ }
+ .code-container a:hover{
+ color: red;
+}
+/* Animation button */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: greenyellow;
+  box-shadow: 0 0 0 2px rgb(238, 255, 47);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(231, 255, 47);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(224, 255, 47);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+/* Facebook va Youtube  */
+#YouTube{
+  overflow: scroll;
+  height: 650px;
+}
+/* FaceBook */
+#FB {
+  background: transparent;
+  position: relative;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #0163E0;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #0163E0;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+#FB svg {
+  fill: #0163E0;
+  height: 25px;
+  width: 25px;
+}
+
+#FB span {
+  margin: 10px;
+}
+
+#FB::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+#FB:hover {
+  color: #fff;
+  border: 1px solid #0163E0;
+  background-color: blue;
+}
+
+#FB:hover svg {
+  fill: currentColor;
+}
+
+#FB:hover::before {
+  box-shadow: inset 0 0 0 10em #0163E0;
+}
+/* YouTube */
+#YT {
+  background: transparent;
+  position: relative;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #e0010c;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #e00101;
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+#YT svg {
+  fill: #e00126;
+  height: 25px;
+  width: 25px;
+}
+
+#YT span {
+  margin: 10px;
+}
+
+#YT::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+#YT:hover {
+  color: #fff;
+  border: 1px solid #e00117;
+  background-color: rgb(236, 7, 7);
+}
+
+#YT:hover svg {
+  fill: currentColor;
+}
+
+#YT:hover::before {
+  box-shadow: inset 0 0 0 10em #0163E0;
+}
+#YouTube .card-body{
+  padding: 0;
+  margin: 0;
+  height: 30px;
+ 
+}
+#Facebook  p {
+  margin: 0;
+  color: red;
+ 
+}
+#Facebook  a {
+  margin: 0;
+  color: rgb(21, 15, 187);
+  text-decoration: none;
+}
+#Facebook a:hover{
+  color: red;
+}
+/* button xem them  */
+#Button_XemThem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  padding: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: hsl(210deg 87% 36%) 0px 7px 0px 0px;
+  background-color: hsl(210deg 100% 44%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(.5, .7, .4, 1);
+ }
+ 
+ #Button_XemThem:before {
+  content: attr(alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  opacity: 1;
+ }
+ 
+ #Button_XemThem:active {
+  box-shadow: none;
+  transform: translateY(7px);
+  transition: 35ms cubic-bezier(.5, .7, .4, 1);
+ }
+ 
+ #Button_XemThem:hover:before {
+  transition: all .0s;
+  transform: translateY(100%);
+  opacity: 0;
+ }
+ 
+ #Button_XemThem i {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+ }
+ 
+ #Button_XemThem:hover i {
+  transition: all .2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+ }
+ 
+ #Button_XemThem:hover i:nth-child(1) {
+  transition-delay: 0.045s;
+ }
+ 
+ #Button_XemThem:hover i:nth-child(2) {
+  transition-delay: calc(0.045s * 3);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(3) {
+  transition-delay: calc(0.045s * 4);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(4) {
+  transition-delay: calc(0.045s * 5);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(6) {
+  transition-delay: calc(0.045s * 6);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(7) {
+  transition-delay: calc(0.045s * 7);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(8) {
+  transition-delay: calc(0.045s * 8);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(9) {
+  transition-delay: calc(0.045s * 9);
+ }
+ 
+ #Button_XemThem:hover i:nth-child(10) {
+  transition-delay: calc(0.045s * 10);
+ }
+ #Container_Xemthem {
+  padding-left: 45%;
+ }
+/* Card Tuyen Sinh Nhu The Nao */
+
+.VKU{
+  /* background-color: #F0FFFF; */
+  background-image: url('../Picture/z5445032212537_e4dc5d719ac497b4a2e9cd7bcd7cf204.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+  /* height: 1000px; */
+ 
+}
+#hangVKU img{
+  width: 90%;
+  height: 80%;
+  border-radius: 8px;
+}
+#CardVKU {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  position: relative;
+  /* padding: 1.8rem; */
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  border: 5px solid 	#ADD8E6;
+ }
+ 
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  width: 70%;
+  border-radius: 20px 0px 20px 0px;
+  border: 5px solid rgb(27, 199, 222);
+  background-color: #ffffff;
+  color: black;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+
+ /*Text*/
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+ }
+ 
+ /*Hover*/
+ #CardVKU:hover {
+  border-color: #f86c00;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-20px);
+  background-color: #FFA07A;
+ }
+ #CardVKU:hover .card-details{
+  color: white;
+ }
+ #CardVKU:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ 
+ }
+ #CardVKU:hover .card-details{
+  color: white;
+
+ }
+ #CardVKU .card-details:hover{
+  color: white;
+ }
+ .icon-ts svg{
+  width: 50px;
+  height: 50px;
+  
+ }
+ .icon-ts{
+  text-align: center;
+ }
+ /* dong hanh cung vku  */
+ /* #Lua_Chon_Tin_Cay{
+  width: fit-content;
+  margin: 0;
+}
+#Lua_Chon {
+overflow: hidden;
+white-space: nowrap;
+border-right: solid 5px rgb(49, 0, 128);
+font-size: 40px;
+font-weight: bold;
+animation: type-text forwards 4s;
+animation-timing-function: steps(40);
+} */
+@keyframes type-text {
+0% {
+  width: 0%;
+}
+100% {
+  width: 100%;
+}
+}
+ .Dong_Hanh{
+  background-image: url('../Picture/Screenshot\ 2024-05-16\ 220227.png');
+  background-size: cover;
+   background-repeat: no-repeat;
+   height: 800px;
+   position: relative;
+  
+ }
+ .Dong_Hanh svg{
+  width: 40px;
+  height: 40px;
+  color: rgb(190, 16, 16);
+ }
+ .Dong_Hanh .card{
+  width: 100%;
+  height: 190px;
+  background-color:#EEEEEE;
+  opacity: 1;
+  border: 3px dotted white;
+  transition: 0.5s ease-out;
+ }
+ .Dong_Hanh p{
+  color: rgb(21, 15, 187);
+  font-weight: bold;
+ }
+ .Dong_Hanh .card:hover{
+ 
+  transform: translateY(-20px);
+ }
+ #DongHanh{
+  margin-top: 10% ;
+ }
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+/* vku co nhung nganh nao  */
+#Hoc_Gi_Tai_VKU{
+  width: fit-content;
+  margin: 0;
+}
+/* #Viet {
+overflow: hidden;
+white-space: nowrap;
+border-right: solid 5px rgb(49, 0, 128);
+font-size: 40px;
+font-weight: bold;
+animation: type-text forwards 4s;
+animation-timing-function: steps(40);
+} */
+
+.typewriter {
+  white-space: nowrap;
+  /* border-right: 1px solid rgb(11, 16, 104); */
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  visibility: hidden;
+  font-size: 40px;
+  color: #162361;
+  font-weight: bold;
+}
+.typewriter.visible {
+  visibility: visible;
+}
+
+@keyframes type-text {
+0% {
+  width: 0%;
+}
+100% {
+  width: 100%;
+}
+}
+#Main {
+width: 100%;
+height: 100vh;
+flex-direction: row;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+background-image: url('../Picture/Screenshot\ 2024-05-18\ 110611.png');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#carouselExampleCaptions {
+  width: 60vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+h2, p, i.fa-brands {
+  color: rgb(8 51 68);
+}
+
+small.role {
+  background-color: rgb(8 51 68);
+  color: rgb(103 232 249);
+
+}
+/* Controls */
+
+i.fa-arrow-right,
+i.fa-arrow-left {
+background: none;
+border: 2px solid rgb(103 232 249);
+color: rgb(103 232 249);
+padding: 10px;
+border-radius: 100%;
+transition: background .6s ease;
+}
+
+i.fa-arrow-right:hover,
+i.fa-arrow-left:hover {
+background: rgb(103 232 249);
+color: black;
+}
+
+/* Indicators */
+.carousel-indicators [data-bs-target] {
+width: 10px;
+height: 10px;
+border-radius: 100%;
+border: 2px solid rgb(8 51 68);
+margin-bottom: -10px;
+}
+#carousel-in{
+  margin-bottom: -100px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color:  rgb(103 232 249);
+ 
+}
+.carousel-inner .card{
+  transition: 0.5s ease-out;
+}
+.carousel-inner .card:hover{
+  transform: translateY(-20px);
+}
+/* Thong diep cua Hieu Truong gưi den sinh vien VKU  */
+#Dang_Ky{
+      background-image: url('../Picture/Screenshot\ 2024-05-18\ 110611.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* the input  */
+.inputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#inputField {
+  border: 2px solid rgb(97, 104, 190);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px 15px;
+  color: black;
+  font-weight: 500;
+  outline: none;
+  caret-color: rgb(155, 78, 255);
+  transition-duration: .3s;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.userIcon {
+  position: absolute;
+  fill: rgb(155, 78, 255);
+  width: 12px;
+  top: -23px;
+  left: -15px;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+.usernameLabel {
+  position: absolute;
+  top: -25px;
+  left: 5px;
+  color: rgb(40, 10, 64);
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  transition: .2s linear;
+  opacity: 0;
+}
+
+#inputField:focus ~ .usernameLabel,
+#inputField:valid ~ .usernameLabel {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus ~ .userIcon,
+#inputField:valid ~ .userIcon {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+#inputField:focus,
+#inputField:valid {
+  background-color: #ddd;
+  transition-duration: .3s;
+}
+/* nut dang ki  */
+.c-button {
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.c-button--gooey {
+  color: #06c8d9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #06c8d9;
+  border-radius: 0;
+  position: relative;
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: #06c8d9;
+  width: 34%;
+  height: 100%;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 700ms ease;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
+}
+#Dang_Ky .card-title{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(8 51 68);
+}
+/* logo  */
+.logos::before, 
+.logos::after {
+    content: '';
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.logos-slide {
+    animation: 20s slide infinite linear;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide img {
+    height: 90px;
+    margin: 0 50px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* footer  */
+/* footer  */
+.footer{
+  background-color: #0274b3;
+  height: 100%;
+  /* margin-left: -10px; */
+ }
+ .footer button{
+   width: 200px;
+   height: 50px;
+   border-radius: 5px;
+   background-color: rgb(230, 238, 13);
+   color: rgb(54, 20, 190);
+   font-size: 16px;
+   font-weight: bold;
+   border: 1px solid white;
+   margin-top: 10px;
+ }
+ #Lien_He{
+   color: rgb(255, 255, 255);
+   font-size: 14px;
+ }
+ /* ket noi voi chung toi  */
+ ul {
+   list-style: none;
+ }
+ 
+ .example-2 {
+   display: flex;
+   margin-top: 40px;
+  
+   
+ }
+ .example-2 .icon-content {
+   margin: 0 10px;
+   position: relative;
+ }
+ .example-2 .icon-content .tooltip {
+   position: absolute;
+   top: -30px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: #fff;
+   padding: 6px 10px;
+   border-radius: 5px;
+   opacity: 0;
+   visibility: hidden;
+   font-size: 14px;
+   transition: all 0.3s ease;
+ }
+ .example-2 .icon-content:hover .tooltip {
+   opacity: 1;
+   visibility: visible;
+   top: -50px;
+ }
+ .example-2 .icon-content a {
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   color: #4d4d4d;
+   background-color: #fff;
+   transition: all 0.3s ease-in-out;
+ }
+ .example-2 .icon-content a:hover {
+   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+ }
+ .example-2 .icon-content a svg {
+   position: relative;
+   z-index: 1;
+   width: 30px;
+   height: 30px;
+ }
+ .example-2 .icon-content a:hover {
+   color: white;
+ }
+ .example-2 .icon-content a .filled {
+   position: absolute;
+   top: auto;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 0;
+   background-color: #000;
+   transition: all 0.3s ease-in-out;
+ }
+ .example-2 .icon-content a:hover .filled {
+   height: 100%;
+ }
+ 
+ .example-2 .icon-content a[data-social="linkedin"] .filled,
+ .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+   background-color: #0274b3;
+ }
+ 
+ .example-2 .icon-content a[data-social="github"] .filled,
+ .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+   background-color: #24262a;
+ }
+ .example-2 .icon-content a[data-social="instagram"] .filled,
+ .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+   background: linear-gradient(
+     45deg,
+     #405de6,
+     #5b51db,
+     #b33ab4,
+     #c135b4,
+     #e1306c,
+     #fd1f1f
+   );
+ }
+ .example-2 .icon-content a[data-social="youtube"] .filled,
+ .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+   background-color: #ff0000;
+ }
+ /* khoa thu vien  */
+ #Khoa_ThuVien button{
+   width: 150px;
+   height: 50px;
+   background-color: red;
+   color: white;
+   font-weight: bold;
+   margin-top: 10px;
+  
+ }
+ #Khoa_ThuVien ul li a{
+   text-decoration: none;
+   color: rgb(241, 241, 247);
+   font-size: 14px;
+ 
+ 
+ }
+ #Khoa_ThuVien ul li{
+   margin-top: 10px;
+ }
+ #Khoa_ThuVien ul{
+   margin-left: -30px;
+ }
+ #Khoa_ThuVien ul li a:hover{
+   color: black;
+   
+ }
+ #TrungTam button{
+   width: 150px;
+   height: 50px;
+   background-color: rgb(243, 216, 10);
+   color: rgb(12, 22, 142);
+   font-weight: bold;
+  margin-top: 10px;
+ }
+ #TrungTam ul li a{
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-size: 14px;
+   
+ 
+ }
+ #TrungTam ul li{
+   margin-top: 10px;
+  
+ }
+ #TrungTam ul{
+   margin-left: -30px;
+ }
+ #TrungTam ul li a:hover{
+   color: red;
+   
+ }
+ #myBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 10px;
+   z-index: 99;
+   border: none;
+   background-color: white;
+   /* background-color: #f67920;
+   border: 2px solid #c40f0f;
+   color: white;
+   cursor: pointer;
+   border-radius: 30px; */
+  opacity: 1;
+  
+   }
+    #myBtn:hover svg{
+     color: #ca5800;
+    }
+  
+   #myBtn svg{
+     width: 30px;
+     height: 30px;
+    
+   }
+
+/* chinh sua justy  */
+.card-text{
+  text-align: justify;
+}
+  

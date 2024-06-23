@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ VKU</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+<!-- suung -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="./Css/Vku.css" type="text/css">
+ 
+<body>
+  <div class="container-fluid" id="results"></div>
+  <div class="container-fluid">
+    <img src="./Picture/logo.png" alt="" style="width: 100%; height: 80%;">
+  </div>
+        <nav class="navbar navbar-expand-md navbar-dark navbar-primary bg-warning sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="javascript:void(0)"><img src="./Picture/logo_Footer.jpg" alt="" style="width: 50px; height: 50px;"></a>  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                          Giới thiệu
+                        </a>
+                      
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)">Tin tức</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Demo/TrangDaoTao.html">Đào tạo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Demo/SinhVien.html">Sinh viên</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Demo/tuyenSinhRieng.html">Tuyển sinh</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+
+                        <ul class="dropdown-menu" id="DangNhap">
+                          <li> <a href="Demo/dangky.html">Đăng Ký</a>
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li> <a href="Demo/dangnhap.html">Đăng Nhập</a>
+                            
+                        </li>
+                        </ul>
+                      </li>
+                  </ul>
+                <form class="d-flex">
+                  <div class="navigation-card">
+                    <a href="#" class="tab">
+                      <svg
+                        class="svgIcon"
+                        viewBox="0 0 104 100"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+                          stroke="black"
+                          stroke-width="7"
+                        ></path>
+                      </svg>
+                    </a>
+                  
+                    <a href="Demo/dangnhap.html" class="tab">
+                      <svg
+                        width="104"
+                        height="100"
+                        viewBox="0 0 104 100"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="21.5"
+                          y="3.5"
+                          width="60"
+                          height="60"
+                          rx="30"
+                          stroke="black"
+                          stroke-width="7"
+                        ></rect>
+                        <g clip-path="url(#clip0_41_27)">
+                          <mask
+                            id="mask0_41_27"
+                            style="mask-type:luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="61"
+                            width="104"
+                            height="52"
+                          >
+                            <path
+                              d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                              fill="white"
+                            ></path>
+                          </mask>
+                          <g mask="url(#mask0_41_27)">
+                            <path
+                              d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                              fill="black"
+                            ></path>
+                          </g>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_41_27">
+                            <rect
+                              width="104"
+                              height="39"
+                              fill="white"
+                              transform="translate(0 61)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  
+                    <a href="#" class="tab">
+                      <svg
+                        width="101"
+                        height="114"
+                        viewBox="0 0 101 114"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="46.1726"
+                          cy="46.1727"
+                          r="29.5497"
+                          transform="rotate(36.0692 46.1726 46.1727)"
+                          stroke="black"
+                          stroke-width="7"
+                        ></circle>
+                        <line
+                          x1="61.7089"
+                          y1="67.7837"
+                          x2="97.7088"
+                          y2="111.784"
+                          stroke="black"
+                          stroke-width="7"
+                        ></line>
+                      </svg>
+                    </a>
+                  </div>
+                  
+                  
+                </form>
+                
+              </div>
+            </div>
+          </nav>
+
+  <!-- Card         -->
+
+  <div class="content hidden">
+    <div id="home">
+    <div class="container">
+  <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel" data-bs-interval="2000">
+   
+     <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    </div>
+    
+   
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./Picture/maxresdefault.jpg" alt="Los Angeles" class="d-block" style="width:100%; height: 600px;">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="./Picture/HS_VKU.jpg" alt="Chicago" class="d-block" style="width:100%; height: 600px;">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="./Picture/Tuyen_Sinh_VKU.jpg" alt="New York" class="d-block" style="width: 100%;height: 600px;">
+         
+      </div>
+      <div class="carousel-item">
+        <img src="./Picture/viethan1.jpg" alt="New York" class="d-block" style="width:100%;height: 600px;">
+         
+      </div>
+      <div class="carousel-item">
+        <img src="./Picture/img-z5304176712795_5bd76d2b5ee7e107f6a0755d94506cd9.jpg" alt="New York" class="d-block" style="width:100%;height: 600px;">
+         
+      </div>
+      <div class="carousel-item">
+        <img src="./Picture/bg_02_2023.jpg" alt="New York" class="d-block" style="width:100%;height: 600px;">
+         
+      </div>
+    </div>
+    
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> 
+
+</div>
+</div>
+  <div class="container-fluid mt-5">
+    <div class="row" id="row-main">
+      <div class="col-md-3 col-sm-6 mb-5">
+       <div class="card">
+       <div> <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg><b> <a href="#" id="transaction-count"> 100</a>%</b> </div>
+        <p id="Giang_Vien">Giảng viên trình độ thạc sĩ, tiến sĩ</p>
+      </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg> <b>+<a href="#" id="city-count">6000</a> </b></div>
+    
+       <p id="Sinh_Vien">Sinh viên </p>
+      </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-journal-code" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708m-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708"/>
+            <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+            <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+          </svg><b>+<a href="#" id="customer-count">200</a></b></div>
+       
+       <p id="Doi_Tac"> Đối tác trong nước và quốc tế </p>
+      </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card">
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+            <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+          </svg> <b>+<a href="#" id="Khoahoc-count">1000</a></b></div>
+       
+       <p id="Khoa_Hoc">Công bố khoa học</p> 
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="width: 100%; height: 100px ; background-color: white;"></div>
+<div class="content hidden">
+  <div class="container-fluid">
+   <div class="row mt-5" id="roww">
+    <div class="col-md-7" >
+      <div class="Tin_Tuc">
+        <a href="#">TIN TỨC</a> <hr>
+      </div>
+      <div class="row" id="row_TT">
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/Tin_Tuc.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">22/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">Gần 1.500 học sinh tỉnh Quảng Ngãi háo hức tham gia Chương trình Tư vấn tuyển sinh và ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-14-4.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">12/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">Đoàn thể thao Sinh viên VKU tham dự Đại hội thể thao Sinh viên Đại học Đà Nẵng lần thứ ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/IT-student.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">22/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">30 năm xây dựng và phát triển Đại học Đà Nẵng: Vị thế mới – Khát vọng lớn ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-3-1.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">11/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">Thứ trưởng Bộ Lao động, Thương binh và Xã hội Nguyễn Bá Hoan thăm và  ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-22-1.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">04/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">VKU hợp tác NLT Group khánh thành đưa vào sử dụng Phòng Lab thực nghiệm và  ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-7.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">22/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">VKU tiếp và làm việc với Phó Chủ tịch Tập đoàn Hanwha Life,Quỹ Childfun, Hàn Quốc và ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-42.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">22/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">Olympic Tin học Miền Trung – Tây Nguyên lần thứ V – 2024: quy mô lớn, chất lượng, uy tín đạt tầm vóc,  ..</a>
+            </div>
+
+        </div>
+        </div>
+        <div class="col-sm-5 mt-4 ms-4 mb-4">
+          <div class="card ">
+            <img src="./Picture/VKU-Campus2.jpg" alt="" style="height: 200px;" >
+            <div class="card-title mt-1">22/04/2024</div>
+            <div class="card-subtitle mt-2">
+              <a href="#" class="TimKiemBanTin">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+            </div>
+
+        </div>
+        </div>
+      </div> 
+       <!-- tin tức khác -->
+       <div class="content hidden">
+       <div class="row">
+        <div class="col-sm-6 ms-2 mb-4">
+          <div class="card" id="Chuc_Nang_Khac">
+        <div class="header">
+          <div class="top">
+            <div class="circle">
+              <span class="red circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="yellow circle2"></span>
+            </div>
+            <div class="circle">
+              <span class="green circle2"></span>
+            </div>
+            <div style="margin-left: 40px;">
+            <button class="animated-button">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Tin tức khác </span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          </div>
+        </div>
+        <div class="code-container">
+          <div id="code">
+          <div class="card mt-3" id="TinTucKhac" style="width: 100%;height: 500px; ">
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-4">
+                <img src="./Picture/Tin_Tuc.jpg" style="width: 100px; height: 70px; " alt="">
+              </div>
+              <div class="col-7">
+                <a href="#">Trải nghiệm VKU Campus Tour 2024: Cơ hội rộng mở – Định hướng tương lai ..</a>
+              </div>
+            </div>
+            <hr>
+        </div>
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="col-sm-5 " id="Facebook">
+        <div class="card" id="YouTube">
+          <div class="card-title">
+            <button id="YT">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+              </svg>
+                <span>YouTube</span>
+                
+            </button>
+            
+          </div>
+          <div>
+           <p>22/01/2024</p>
+           <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+          </div>
+          <hr>
+
+          <div >
+            <p>22/01/2024</p>
+            <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+           </div>
+           <hr>
+           <div >
+            <p>22/01/2024</p>
+            <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+           </div>
+          <hr>
+           <div class="card-title">
+            <button id="FB">
+              <svg viewBox="0 0 16 16" class="bi bi-facebook" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+            </svg>
+                <span>Facebook</span>
+                
+            </button>
+            <div>
+              <p>22/01/2024</p>
+              <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+             </div>
+             <hr>
+   
+             <div >
+               <p>22/01/2024</p>
+               <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+              </div>
+              <hr>
+              <div >
+               <p>22/01/2024</p>
+               <a href="#">VKU Tổng kết tuyển sinh 2023 và khởi động chiến dịch tuyển sinh năm 2024</a>
+              </div>
+             <hr>
+          </div>
+        </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    
+    <div class="col-md-5" id="abc">
+      <div class="abccc"  style="position: sticky; top: 100px;" >
+        <div class="card" id="Khai_Quat">
+          <div class="card-title " id="card-title">
+            <h3>Khái quát về trường VKU</h3>
+        </div>
+        <div class="card-body" id="card-body">
+          <p class="small-desc">
+            Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn là cơ sở đào tạo,
+            nghiên cứu khoa học, chuyển giao công nghệ, đổi mới sáng tạo, khởi nghiệp, phục vụ cộng đồng lớn và uy tín của cả nước về 
+           các lĩnh vực công nghệ thông tin, truyền thông và các lĩnh vực liên quan theo mô hình đại học định hướng ứng dụng; …
+           <p> <a href="GioiThiu.html" style="font-weight: bold; color: black;">Xem thêm</a></p>
+          </p>
+         
+        </div>
+    
+        <div class="card-subtitle">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/4_xRDYpEtxA?si=2HQJF2ID70jFlePe"
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+           gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+      </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
+  <!-- button xem them -->
+  <div class="container-fluid mt-5 mb-5" id="Container_Xemthem">
+  <button alt="xem thêm" id="Button_XemThem">
+   
+      <i>x</i>
+      <i>e</i>
+      <i>m</i>
+      
+      <i>&nbsp;</i>
+      <i>t</i>
+      <i>h</i>
+      <i>ê</i>
+      <i>m</i>
+     
+    
+    
+  </button>
+</div>
+
+<!-- Tuyen sinh -->
+<div class="content hidden">
+<div class="container-fluid">
+  <div class="VKU">
+    <!-- <div class="aaa">hh</div>
+    <div class="headerr"><p>Trở thành sinh viên VKU như thế nào ?</p></div> -->
+    <div class="row" id="hangVKU">
+      <!-- <div class="col-md-6 mt-5">
+       
+      </div> -->
+      <div class="col-md-6 mt-5 ms-5">
+        <div class="row">
+          <div class="col-6 mb-5 ">
+            <div class="card" id="CardVKU">
+              <div class="card-details">
+                
+                <p class="text-body">Xét tuyển thẳng theo quy định của Bộ GD&DT</p>
+                <div class="icon-ts"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-add" viewBox="0 0 16 16">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h4a.5.5 0 1 0 0-1h-4a.5.5 0 0 1-.5-.5V7.207l5-5 6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 1 0 1 0v-1h1a.5.5 0 1 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                </svg></div>
+              </div>
+              <button class="card-button">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col-6 mb-5 ">
+            <div class="card" id="CardVKU">
+              <div class="card-details">
+                <p class="text-body">Xét tuyển học bạ <br>
+                  (Tuyển sinh theo hình thức xét học bạ)</p>
+                  <div class="icon-ts"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building-gear" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6.5a.5.5 0 0 1-1 0V1H3v14h3v-2.5a.5.5 0 0 1 .5-.5H8v4H3a1 1 0 0 1-1-1z"/>
+                    <path d="M4.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-6 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm3 0a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.386 1.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                  </svg></div>
+              </div>
+              <button class="card-button">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col-6 mb-5 ">
+            <div class="card" id="CardVKU">
+              <div class="card-details">
+                
+                <p class="text-body"><b>Đăng ký xét kết quả thi ĐGNL</b> <br>
+                  (ĐHQG HCM tổ chức)</p>
+                  <div class="icon-ts"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                    <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                    <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+                  </svg></div>
+              </div>
+              <button class="card-button">Xem thêm</button>
+            </div>
+          </div>
+          <div class="col-6 mb-5 ">
+            <div class="card" id="CardVKU">
+              <div class="card-details">
+                
+                <p class="text-body">Xét theo điểm thi THPT</p>
+                <div class="icon-ts"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
+                  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2M9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
+                </svg></div>
+              </div>
+              <button class="card-button">Xem thêm</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Dong hanh cung VKU -->
+
+<div class="container-fluid mt-5" id="Lua_Chon_Tin_Cay">
+  <p class="typewriter" data-text="Lựa chọn đáng tin cậy" ></p>
+</div>
+<div style="width: 100%; height: 50px; background-color: white;"></div>
+<div class="content hidden">
+<div class="container-fluid mt-5" >
+  <div class="Dong_Hanh">
+    <div class="row mt-4">
+      <div class="col-md-5">
+      </div>
+      <div class="col-md-7" id="DongHanh">
+        <div class="row">
+          <div class="col-6 col-md-3  mb-2">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 11a.5.5 0 0 0 .5-.5V6.707l1.146 1.147a.5.5 0 0 0 .708-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L7.5 6.707V10.5a.5.5 0 0 0 .5.5"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+              </svg></div>
+              <div class="card-body">
+               <p > Đội ngũ giảng viên xuất sắc</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3  mb-2">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+              </svg></div>
+              <div class="card-body">
+               <p > Mức học phí ưu đãi nhất cả nước</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3  mb-4">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
+                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
+              </svg></div>
+              <div class="card-body">
+               <p > Chương trình giảng dạy, đào tạo hiện đại</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3  mb-4">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop-fill" viewBox="0 0 16 16">
+                <path d="M2.5 2A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+              </svg></div>
+              <div class="card-body">
+               <p > Cơ sở vật chất hạ tầng khang trang</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3  mb-4">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+              </svg></div>
+              <div class="card-body">
+               <p > Mạng lưới trên 200 đối tác chiến lược</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-2  ">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+              </svg></div>
+              <div class="card-body">
+               <p>Cộng đồng hơn 6.000 sinh viên học và sau đại học</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-2 ">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+              </svg></div>
+              <div class="card-body">
+               <p>Cộng đồng hơn 6.000 sinh viên học và sau đại học</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-2 ">
+            <div class="card">
+              <div class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+              </svg></div>
+              <div class="card-body">
+               <p>Cộng đồng hơn 6.000 sinh viên học và sau đại học</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>  
+</div>
+<!-- VKU dao tao nhung nganh nao -->
+
+<div class="container-fluid mt-5" id="Hoc_Gi_Tai_VKU">
+  <div class="container-fluid mt-5" id="Lua_Chon_Tin_Cay">
+    <p class="typewriter" style="margin-top: 50px;" data-text="Học gì tại VKU?" ></p>
+  </div>
+</div>
+<div style="width: 100%; height: 50px; background-color: white;"></div>
+<div class="content hidden">
+<main id="Main">
+  <section>
+
+    <div id="carouselExampleCaptions" class="carousel slide" >
+        <div class="carousel-indicators" id="carousel-in">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17" aria-label="Slide 18"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18" aria-label="Slide 19"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19" aria-label="Slide 20"></button>
+        </div>
+        
+        <div class="carousel-inner"><!--The Carousel Container-->
+          <div class="card shadow-sm carousel-item carousel-item-1 active"><!--The Carousel item 1-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                          
+                            <h2 class="mt-4">Ngành công nghệ thông tin(cử nhân)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo cử nhân ngành Công nghệ Thông tin (CNTT)
+                             có phẩm chất chính trị, đạo đức, trách nhiệm nghề nghiệp và ý
+                             thức phục vụ cộng đồng; có kiến thức, kỹ năng thực hành nghề nghiệp và năng lực...</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                           
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/5387.jpg_wh860.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 1]-->
+
+          <div class="card shadow-sm carousel-item carousel-item-2 "><!-- The Carousel item 2-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Công nghệ thông tin (Kỹ sư)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo kỹ sư ngành CNTT có phẩm chất chính trị, đạo đức, trách nhiệm nghề 
+                            nghiệp và ý thức phục vụ cộng đồng; có kiến thức, kỹ năng thực
+                             hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,
+                              đáp ứng tốt.. </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/ky-su-cn.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 2]-->
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                           
+                            <h2 class="mt-4">Ngành Công nghệ thông tin (Cử nhân - Hợp tác doanh nghiệp)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo cử nhân ngành Công nghệ Thông tin (CNTT) có phẩm chất chính trị,
+                             đạo đức, trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng;
+                             có kiến thức, kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/hoc-lap-trinh-bat-dau-tu-dau-2-.webp" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 4-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Công nghệ truyền thông (Cử nhân)</h2>
+                          <p class="card-text t1 mt-2"> Đào tạo Cử nhân ngành Công nghệ truyền thông có phẩm chất chính trị, 
+                            đạo đức, trách nhiệm với nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, kỹ năng nghề nghiệp
+                             và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,... </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/5387.jpg_wh860.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 4]-->
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Trí tuệ nhân tạo (Kỹ sư)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo kỹ sư ngành Trí tuệ nhân tạo (TTNT) có phẩm chất chính trị, đạo đức,
+                             trách nhiệm với nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe, </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/20210521_164340_688751_chan-doan-hinh-anh.max-1800x1800.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành An toàn thông tin (Kỹ sư)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo kỹ sư ngành An toàn thông tin (ATTT) có phẩm chất chính trị, đạo đức,
+                             trách nhiệm và sự cảnh giác cao khi tác nghiệp trên không gian mạng; có ý thức về vai trò,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng;</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/istockphoto-1412282189-612x612.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Công nghệ kỹ thuật máy tính (Kỹ sư)</h2>
+                          <p class="card-text t1 mt-2">Đào tạo những kỹ sư ngành Công nghệ Kỹ thuật máy tính (CNKTMT) có phẩm chất chính trị,
+                             đạo đức, trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo</p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/sddefault.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Công nghệ kỹ thuật máy tính (Cử nhân)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo những cử nhân ngành Công nghệ Kỹ thuật máy tính (CNKTMT) có phẩm chất chính trị, đạo đức,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/ky-thuat-may-tinh-cu-nhan.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chuyên ngành Thiết kế vi mạch bán dẫn (Kỹ sư)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo những Kỹ sư Chuyên ngành Thiết kế vi mạch bán dẫn có phẩm chất chính trị, đạo đức,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/vi-mach-dien-tu-2-1024x683.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chuyên ngành Thiết kế mỹ thuật số (Cử nhân)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Cử nhân chuyên ngành Thiết kế Mỹ thuật số có phẩm chất chính trị, đạo đức,
+                             trách nhiệm với nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức,
+                             kỹ năng nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,..
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/thiet-ke-my-thuat-so-cu-nhan.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->     
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Marketing - Chuyên ngành Marketing kỹ thuật số</h2>
+                          <p class="card-text t1 mt-2">
+                            Chương trình đào tạo Cử nhân Marketing - chuyên ngành Marketing kỹ thuật số theo định hướng ứng dụng,
+                             giúp cung cấp nguồn nhân lực có lòng yêu nghề, có phẩm chất chính trị, đạo đức nghề nghiệp, có sức khỏe tốt,
+                              tư duy khởi nghiệp, có kiến thức và..
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/marketing.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->   
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Ngành Quản trị kinh doanh - Chuyên ngành Quản trị thương mại điện tử</h2>
+                          <p class="card-text t1 mt-2">
+                            Chương trình đào tạo cử nhân ngành Quản trị kinh doanh - Chuyên ngành Quản trị thương mại điện tử giúp cung cấp 
+                            nguồn nhân lực có lòng yêu nghề, có phẩm chất chính trị, đạo đức nghề nghiệp, có sức khỏe tốt, tư duy khởi nghiệp,
+                             có kiến thức và thành thạo kỹ năng trong lĩnh vực QTKD để đáp ứng quá trình tăng trưởng
+                             và hội nhập quốc tế của các tổ chức trong nền kinh tế số. 
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/chuyen-nganh-quan-tri-thuong-mai-dien-tu.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->   
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chương trình Cử nhân Quản trị kinh doanh (song ngữ Anh - Việt)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Cử nhân Quản trị kinh doanh (song ngữ Việt – Anh) theo tiêu chuẩn quốc tế. 
+                            Sinh viên tham gia chương trình này được học các học phần chuyên môn bằng 2 ngôn ngữ Anh và Việt..
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/chuong-trinh-quan-tri-kinh-doanh-song-ngu-anh-viet.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->   
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chuyên ngành Quản trị Dịch vụ Du lịch và Lữ hành số</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo cử nhân ngành Quản trị kinh doanh – chuyên ngành Quản trị dịch vụ du lịch & lữ hành số có phẩm chất chính trị, đạo đức,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,.. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/quan-tri-dich-vu-du-lich-va-lu-hanh-so.png" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->   
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chuyên ngành Quản trị Logistics và Chuỗi cung ứng số</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo cử nhân ngành Quản trị Logistics và Chuỗi cung ứng số có phẩm chất chính trị, đạo đức,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,.. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/logistics.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                            <h2 class="mt-4">Chuyên ngành Quản trị Tài chính số</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo cử nhân ngành Quản trị Tài chính số có phẩm chất chính trị, đạo đức,
+                             trách nhiệm nghề nghiệp và ý thức phục vụ cộng đồng; có kiến thức, 
+                            kỹ năng thực hành nghề nghiệp và năng lực nghiên cứu tương xứng với trình độ đào tạo; có sức khỏe,.. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/chuyen-nganh-quan-tri-tai-chinh-ao.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                          <h2 class="mt-4">Chương trình Kỹ sư Công nghệ thông tin (Song ngữ Nhật - Việt)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Kỹ sư Công nghệ thông tin (song ngữ Việt – Nhật) có đầy đủ kiến thức, kỹ năng và thái độ như ngành Công nghệ thông tin.
+                             Bên cạnh đó,
+                             sinh viên tham gia chương trình này được học tăng cường tiếng Nhật và sử dụng tiếng Nhật trong một số học phần chuyên môn. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/nhat ban.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                          <h2 class="mt-4">Chương trình Kỹ sư Công nghệ thông tin (Song ngữ Hàn - Việt)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Kỹ sư Công nghệ thông tin (song ngữ Việt – Hàn) có đầy đủ kiến thức, kỹ năng và thái độ như ngành Công nghệ thông tin.
+                             Bên cạnh đó,
+                             sinh viên tham gia chương trình này được học tăng cường tiếng Nhật và sử dụng tiếng Nhật trong một số học phần chuyên môn. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/hanQuoc.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+
+
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                          <h2 class="mt-4">Chương trình Cử nhân Công nghệ thông tin (Song ngữ Anh - Việt)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Kỹ sư Công nghệ thông tin (song ngữ Việt – Anh) có đầy đủ kiến thức, kỹ năng và thái độ như ngành Công nghệ thông tin.
+                             Bên cạnh đó,
+                             sinh viên tham gia chương trình này được học tăng cường tiếng Nhật và sử dụng tiếng Nhật trong một số học phần chuyên môn. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/cu-nhan-cntt-anh-viet.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+          <div class="card shadow-sm carousel-item carousel-item-1 "><!--The Carousel item 3-->
+            <div class="row row-cols-1 row-cols-sm-2 g-3">
+                <div class="col">
+                    <div class="">
+                        <div class="card-body d-none d-sm-block">
+                            
+                          <h2 class="mt-4">Chương trình Kỹ sư Công nghệ thông tin (Song ngữ Anh - Việt)</h2>
+                          <p class="card-text t1 mt-2">
+                            Đào tạo Kỹ sư Công nghệ thông tin (song ngữ Việt – Anh) có đầy đủ kiến thức, kỹ năng và thái độ như ngành Công nghệ thông tin.
+                             Bên cạnh đó,
+                             sinh viên tham gia chương trình này được học tăng cường tiếng Nhật và sử dụng tiếng Nhật trong một số học phần chuyên môn. 
+                            
+                          </p>
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-dribbble"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-figma"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-linkedin"></i></button>
+                              <button type="button" class="btn btn-sm"><i class="fa-brands fa-x-twitter"></i></button>
+                            </div>
+                            <small class="px-2 py-2 rounded-pill d-inline-block mt-5 role">Xem thêm</small>
+                          </div>
+                        </div>
+                      </div>
+                </div><!--[end of col]-->
+                
+                <div class="col">
+                    <div class="shadow-sm rounded-2 w-100 h-100">
+                            <img src="./Picture/ky-su-cntt-anh-viet.jpg" class="rounded-2 w-100 h-100" style="aspect-ratio: 1/1; object-fit: cover;" />
+                      </div>
+                </div><!--[end of card]-->
+            </div>
+          </div><!--[End of Carousel Item 3]-->  
+      </div><!--[End of Container inner]-->
+</section>
+<div class="control-btn">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <i class="fa-solid fa-arrow-left"></i>
+      <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <i class="fa-solid fa-arrow-right"></i>
+      <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</main>
+</div>
+<!-- Thong diep cua hieu truong gui den cac sinh vien cua truong -->
+<div class="container-fluid mt-5">
+<div id="Dang_Ky">
+  <div class="row">
+    <div class="col-md-6 mt-5">
+      <iframe  width="100%" height="500px" src="https://www.youtube.com/embed/-2NBtbnSs3k?autoplay=1&loop=1&playlist=-2NBtbnSs3k&mute=1" 
+       frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6 mt-5">
+      <div class="card">
+        <div class="card-title">Đăng ký tư vấn tuyển sinh</div>
+        <form action="" id="DangKyForm">
+        <div class="card-body">
+          <div class="inputContainer ">
+            <input required id="inputField" placeholder="Username(*)" type="text">
+            <label class="usernameLabel" for="inputField">Username(*)</label>
+            <svg viewBox="0 0 448 512" class="userIcon"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path></svg>
+        </div>
+        <div class="row mt-4">
+          <div class="col-6">
+            <div class="inputContainer ">
+              <input required id="inputField" placeholder="Số điện thoại(*)" type="tel">
+              <label class="usernameLabel" for="inputField">Số điện thoại(*)</label>
+              <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+              </svg>
+          </div>
+          </div>
+          <div class="col-6">
+            <div class="inputContainer ">
+              <input required="required" id="inputField" placeholder="Gmail" type="email">
+              <label class="usernameLabel" for="inputField">Gmail</label>
+              <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+              </svg>
+          </div>
+          </div>
+          <div class="col-6 mt-4">
+            <div class="inputContainer ">
+              <input required id="inputField" placeholder="Tỉnh/Thành phố (*)" type="text">
+              <label class="usernameLabel" for="inputField">Tỉnh/Thành phố(*)</label>
+              <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+              </svg>
+          </div>
+          </div>
+          <div class="col-6 mt-4 mb-4">
+            <div class="inputContainer ">
+              <input required id="inputField" placeholder="Trường học (*)" type="text">
+              <label class="usernameLabel" for="inputField">Trường học(*)</label>
+              <svg class="userIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-houses" viewBox="0 0 16 16">
+                <path d="M5.793 1a1 1 0 0 1 1.414 0l.647.646a.5.5 0 1 1-.708.708L6.5 1.707 2 6.207V12.5a.5.5 0 0 0 .5.5.5.5 0 0 1 0 1A1.5 1.5 0 0 1 1 12.5V7.207l-.146.147a.5.5 0 0 1-.708-.708zm3 1a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708zm.707.707L5 7.207V13.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5V7.207z"/>
+              </svg>
+          </div>
+          </div>
+         
+        </div>
+        <div class="inputContainer ">
+          <input required="required" id="inputField" placeholder="Chọn ngành nghề(*)" type="text" >
+         
+          <label class="usernameLabel" for="inputField">Chọn ngành nghề(*)</label>
+          <svg viewBox="0 0 448 512" class="userIcon"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"></path></svg>
+      </div>
+
+      <button class="c-button c-button--gooey mt-5"> Đăng ký ngay
+        <div class="c-button__blobs">
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+            <feBlend in="SourceGraphic" in2="goo"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- cac doi tac hop tac voi VKU  -->
+
+  <main class="vw-90 vh-100 d-flex flex-row justify-content-center align-items-center">
+    <div class="logos overflow-hidden py-5 px-0 position-relative" style="background-color: #fff; white-space: nowrap; ">
+      <div class="logos-slide d-inline-block">
+
+          <img src="https://www.bssnews.net/assets/news_photos/2021/09/14/image-17351-1631635438.jpg" alt=""><!--Etsy-->
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/FPT_Software_Logo.png" alt=""><!--Airbnb-->
+
+          <img src="https://nix.edu.vn/wp-content/uploads/2022/10/logo-nix-2.jpeg" alt=""><!--amazon-->
+
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_IUH.png/800px-Logo_IUH.png" alt=""><!--Target-->
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDfbWWd0BQhY6Bl-gJBKMOb1pSKIkLW3pD5c9qnRAkg&s" alt=""><!--Netflix-->
+
+          <img src="https://www.fisu.edu.vn/storage/images/LOGOFISU.jpg" alt=""><!--Nasa-->
+
+          <img src="https://www.shutterstock.com/image-vector/nlt-letter-initial-logo-design-260nw-2169844623.jpg" alt=""><!--Shopify-->
+
+          <img src="https://www.vinasa.org.vn/Anhdaidien/Napa_Logo_final-01%20(11).jpg" alt=""><!--Uber-->
+
+          <img src="https://chiefit.me/wp-content/uploads/2016/04/evvo-labs_logo400x400.jpg" alt=""><!--Slack-->
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6O32QVBI5sE5pdz2qaodP9XBG2HEiReoQqt_Gq0iPdA&s" alt=""><!--Google-->
+
+          <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Yeungnam_University_Emblem.svg" alt=""><!--Walmark-->
+   
+  </div>
+</main>
+</div>
+
+<div class="container-fluid">
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4 ms-4">
+        <!-- <p style="font-size: 20px; color: red; font-weight: bold;">Trường Đại học Công nghệ thông tin và Truyền thông Việt - Hàn</p> -->
+        <p><button>Địa chỉ</button></p>
+        <div id="Lien_He">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg> 470 Trần Đại Nghĩa, Q. Ngũ Hành Sơn, Tp. Đà Nẵng</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg> 0236.3.667.117</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+        </svg> info@vku.udn.vn</p>
+      </div>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.733396391822!2d108.24978007490205!3d15.975293084690728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sVietnam%20-%20Korea%20University%20of%20Information%20and%20Communication%20Technology!5e0!3m2!1sen!2s!4v1716051186806!5m2!1sen!2s"
+           width="300" height="250" style="border:0;"
+           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+           <p><button>Kết nối với chúng tôi</button></p>
+           <div><ul class="example-2">
+            <li class="icon-content">
+              <a
+                href="https://linkedin.com/"
+                aria-label="LinkedIn"
+                data-social="linkedin"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">LinkedIn</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">GitHub</div>
+            </li>
+            <li class="icon-content">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                data-social="instagram"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Instagram</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Youtube</div>
+            </li>
+          </ul></div>
+      </div>
+      <div class="col-md-4 " id="Khoa_ThuVien">
+        <div><button>KHOA-VIỆN</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Khoa Khoa học máy tính</a></li>
+            <li><a href="#">Khoa Kỹ thuật máy tính và Điện tử</a></li>
+            <li><a href="#">Khoa Kinh tế số & TMĐT</a></li>
+            <li><a href="#">Viện Khoa học và Công nghệ số</a></li>
+            <li><a href="#">Tổ Cơ bản</a></li>
+            <li><a href="#">Phòng Khảo thí - ĐBCLGD</a></li>
+            <li><a href="#">Phòng Thanh tra - Pháp chế</a></li>
+            <li><a href="#">Phòng Cơ sở vật chất</a></li>
+            <li><a href="#">Phòng Kế hoạch - Tài chính</a></li>
+           
+
+          </ul>
+        </div>
+        <div><button>PHÒNG</button></div>
+        <ul>
+          <li><a href="#">Phòng Tổ chức - Hành chính</a></li>
+          <li><a href="#">Phòng Đào tạo</a></li>
+          <li><a href="#">Phòng Công tác sinh viên</a></li>
+          <li><a href="#">Phòng KHCN - HTQT</a></li>
+         
+         
+
+        </ul>
+      </div>
+
+      <div class="col-md-3 " id="TrungTam">
+        <div><button>TRUNG TÂM</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Trung tâm Học liệu và Truyền thông</a></li>
+            <li><a href="#">Trung tâm Ngoại ngữ - Tin học</a></li>
+            <li><a href="#">Trung tâm Quản trị và Phát triển CNTT</a></li>
+            <li><a href="#">Tổ Quản lý Ký túc xá - Phục vụ cộng đồng</a></li>
+            
+           
+
+          </ul>
+        </div>
+        <div><button>ĐOÀN THỂ</button></div>
+        <ul>
+          <li><a href="#">Đảng bộ</a></li>
+          <li><a href="#">Công đoàn</a></li>
+          <li><a href="#">Đoàn thanh niên</a></li>
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div style="width: 100%; height: 50px; background-color: rgb(25, 25, 138);">h</div>
+</div>
+
+<!-- nut day len dau trang  -->
+<button id="myBtn" title="Lên đầu trang"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg></button>
+
+  <script>
+    function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+    let currentNumber = startNumber
+    const interval = window.setInterval(updateNumber, 17)
+    function updateNumber() {
+      if (currentNumber >= finalNumber) {
+        clearInterval(interval)
+      } else {
+        let inc = Math.ceil(finalNumber / (duration / 17))
+        if (currentNumber + inc > finalNumber) {
+          currentNumber = finalNumber
+          clearInterval(interval)
+        } else {
+          currentNumber += inc
+        }
+        callback(currentNumber)
+      }
+    }
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    animateNumber(100, 5000, 0, function (number) {
+      const formattedNumber = number.toLocaleString()
+      document.getElementById('transaction-count').innerText = formattedNumber
+    })
+    
+    animateNumber(6000, 5000, 0, function (number) {
+      const formattedNumber = number.toLocaleString()
+      document.getElementById('city-count').innerText = formattedNumber
+    })
+    animateNumber(200, 5000, 0, function (number) {
+      const formattedNumber = number.toLocaleString()
+      document.getElementById('customer-count').innerText = formattedNumber
+    })
+   
+  animateNumber(1000, 5000, 0, function (number) {
+      const formattedNumber = number.toLocaleString()
+      document.getElementById('Khoahoc-count').innerText = formattedNumber
+    })
+  })
+  </script>
+  <!-- doan code cho chạy ngang cac logo  -->
+  <script>
+      const cloneEl = document.querySelector(".logos-slide").cloneNode(true)
+  const logos = document.querySelector('.logos').appendChild(cloneEl);
+
+  </script>
+<!-- doan code day len dau trang  -->
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+   
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  document.getElementById("myBtn").style.display = "block";
+  } else {
+  document.getElementById("myBtn").style.display = "none";
+  }
+  }
+   
+  document.getElementById('myBtn').addEventListener("click", function(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  });
+  </script>
+
+  <!-- tim kiem  -->
+  <script>
+function searchLinks() {
+const searchTerm = document.getElementById('SearchInputt').value.toLowerCase();
+const links = document.querySelectorAll('.TimKiemBanTin');
+const resultsContainer = document.getElementById('results');
+resultsContainer.innerHTML = '';
+
+let found = false;
+links.forEach(link => {
+    if (link.textContent.toLowerCase().includes(searchTerm)) {
+        // link.classList.remove('hidden');
+     //  document.write('a');
+       const resultItem = document.createElement('a');
+            resultItem.href = link.href;
+            resultItem.textContent = link.textContent;
+            resultItem.className = 'TimKiemBanTin';
+            resultsContainer.appendChild(resultItem);
+            found = true;
+    } 
+});
+if (!found) {
+        resultsContainer.innerHTML = 'No results found.';
+    }
+}
+</script>
+<!-- hieu ung cuon trang  -->
+<script>
+  $(document).ready(function() {
+      $('.content').waypoint(function() {
+          $(this.element).addClass('visible');
+      }, { offset: '75%' });
+  });
+</script>
+<!-- hieu ung go chuot  -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+const typewriterElements = document.querySelectorAll(".typewriter");
+
+function checkScroll() {
+  const triggerBottom = window.innerHeight / 5 * 4;
+
+  typewriterElements.forEach(el => {
+      const elTop = el.getBoundingClientRect().top;
+
+      if (elTop < triggerBottom) {
+          if (!el.classList.contains("visible")) {
+              el.classList.add("visible");
+              startTyping(el);
+          }
+      } else {
+          el.classList.remove("visible");
+          el.style.width = "0";
+      }
+  });
+}
+
+function startTyping(element) {
+  const text = element.getAttribute("data-text");
+  let index = 0;
+  const speed = 100; // tốc độ gõ (ms)
+
+  function type() {
+      if (index < text.length) {
+          element.style.width = index + 1 + "ch"; // đặt width để hiện chữ
+          element.textContent = text.slice(0, index + 1);
+          index++;
+          setTimeout(type, speed);
+      }
+  }
+
+  type();
+}
+
+window.addEventListener("scroll", checkScroll);
+
+// Gọi hàm checkScroll để kiểm tra ngay khi trang được tải
+checkScroll();
+});
+
+</script>
+
+<!-- ham viet dinh dang dia chi gmail  -->
+<script>
+  // Hàm kiểm tra định dạng email
+  function validateEmail(email) {
+      // Biểu thức chính quy để kiểm tra định dạng email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+
+  // Lắng nghe sự kiện submit của form
+  document.getElementById('DangKyForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Ngăn chặn submit form mặc định
+
+      const emailInput = document.getElementById('email');
+      const email = emailInput.value.trim();
+
+      // Kiểm tra định dạng email
+      if (!validateEmail(email)) {
+          alert('Vui lòng nhập một địa chỉ email hợp lệ.');
+          emailInput.focus();
+          return;
+      }
+
+      // Nếu email hợp lệ, có thể tiếp tục xử lý form
+      console.log('Email hợp lệ. Tiếp tục xử lý form...');
+      // Ở đây bạn có thể thêm code để xử lý form đăng nhập
+  });
+</script>
+ <!-- ham kiem tra dinh dang so dien thoai gom 10 so  -->
+
+ <script>
+  const phoneInput = document.getElementById('phone');
+
+phoneInput.addEventListener('input', function() {
+  // Loại bỏ các ký tự không phải số
+  this.value = this.value.replace(/\D/g, '');
+
+  // Kiểm tra độ dài
+  if (this.value.length !== 10) {
+    this.setCustomValidity('Số điện thoại phải gồm 10 chữ số');
+  } else {
+    this.setCustomValidity('');
+  }
+});
+ </script>
+</body>
+</html>

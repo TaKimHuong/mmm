@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh viên</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ <!-- Bao gồm Waypoints -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+ <link rel="stylesheet" href="../Css/sinhvien.css" type="text/css">
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-primary bg-warning sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="/Picture/logo_Footer.jpg" alt="" style="width: 50px; height: 50px;"></a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <!-- <div class="dropdown mt-1" id="dropdown">
+                      <button type="button" class="btn dropdown-toggle" id="button" data-bs-toggle="dropdown">
+                       Giới thiệu
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item "href="#">Tổng quát</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Cơ cấu tổ chức</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Đội ngũ cán bộ viên chức</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                        <li><a class="dropdown-item" href="#">Năm học</a></li>
+                      </ul>
+                      
+                    </div> -->
+                    <a class="nav-link" href="./../index.html">
+                      Giới thiệu
+                    </a>
+                  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Demo/TrangDaoTao.html">Đào tạo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Sinh viên</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Demo/tuyenSinhRieng.html">Tuyển sinh</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+
+                    <ul class="dropdown-menu">
+                      <li>Đăng Ký
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>Đăng Nhập
+                        
+                    </li>
+                    </ul>
+                  </li>
+              </ul>
+            <form class="d-flex">
+              <div class="navigation-card">
+                <a href="#" class="tab">
+                  <svg
+                    class="svgIcon"
+                    viewBox="0 0 104 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+                      stroke="black"
+                      stroke-width="7"
+                    ></path>
+                  </svg>
+                </a>
+              
+                <a href="/Demo/dangnhap.html" class="tab">
+                  <svg
+                    width="104"
+                    height="100"
+                    viewBox="0 0 104 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="21.5"
+                      y="3.5"
+                      width="60"
+                      height="60"
+                      rx="30"
+                      stroke="black"
+                      stroke-width="7"
+                    ></rect>
+                    <g clip-path="url(#clip0_41_27)">
+                      <mask
+                        id="mask0_41_27"
+                        style="mask-type:luminance"
+                        maskUnits="userSpaceOnUse"
+                        x="0"
+                        y="61"
+                        width="104"
+                        height="52"
+                      >
+                        <path
+                          d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                          fill="white"
+                        ></path>
+                      </mask>
+                      <g mask="url(#mask0_41_27)">
+                        <path
+                          d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_41_27">
+                        <rect
+                          width="104"
+                          height="39"
+                          fill="white"
+                          transform="translate(0 61)"
+                        ></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              
+                <a href="#" class="tab">
+                  <svg
+                    width="101"
+                    height="114"
+                    viewBox="0 0 101 114"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="46.1726"
+                      cy="46.1727"
+                      r="29.5497"
+                      transform="rotate(36.0692 46.1726 46.1727)"
+                      stroke="black"
+                      stroke-width="7"
+                    ></circle>
+                    <line
+                      x1="61.7089"
+                      y1="67.7837"
+                      x2="97.7088"
+                      y2="111.784"
+                      stroke="black"
+                      stroke-width="7"
+                    ></line>
+                  </svg>
+                </a>
+              </div>
+              
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+    <div id="sinhvien">
+       <p>Hoạt động sinh viên</p>
+    </div>
+   <div class="content hidden">
+    <div class="container mb-5 mt-5">
+        <div class="row">
+       
+           
+            <div>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="9"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="10"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="11"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="12"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="13"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="14"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="15"></button>
+                      <button type="button" data-bs-target="#demo" data-bs-slide-to="16"></button>
+                      
+                    </div>
+                    
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner" id="KiTucXa">
+                      <div class="carousel-item active">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/HIH3T-1.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:650px;">
+                        <div class="carousel-caption">
+                         <div class="card">
+                            (Ảnh: Nhóm từ thiện Hand in Hand Việt - Hàn) 
+    
+                         </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/HIH3T-6.jpg" alt="Chicago" class="d-block" style="width:100%; height:  650px;">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Nhóm từ thiện Hand in Hand Việt - Hàn)
+        
+                             </div>
+                        </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/HIH3T-15-2048x1365.jpg" alt="New York" class="d-block" style="width:100%;height: 650px;">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Nhóm từ thiện Hand in Hand Việt - Hàn) 
+        
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2024/05/b.png" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ An toàn thông tin VKU (VSL)) 
+        
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/NDT-1-scaled-e1699758745145-2048x1322.jpeg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ nhịp điệu trẻ) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_955/https://vku.udn.vn/wp-content/uploads/2023/11/NDT-2.png" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ nhịp điệu trẻ) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1280/https://vku.udn.vn/wp-content/uploads/2023/11/VSC1.png" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Sinh viên Khởi nghiệp (VSC)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1421/https://vku.udn.vn/wp-content/uploads/2023/11/Marc4.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ VKU Marketing (VKU MARC)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1348/https://vku.udn.vn/wp-content/uploads/2023/11/FLC-1-e1699713419637.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Ngoại ngữ (FLC)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/FLC-3-e1699713437790.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Ngoại ngữ (FLC)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/VM-8.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Truyền Thông (VM)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/VM-13-2048x1367.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Truyền Thông (VM)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/VBC-3.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Bóng rổ (FLC)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/Karate-8-scaled-e1699715174791-2048x1235.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Võ Thuật Karate VKU) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1081/https://vku.udn.vn/wp-content/uploads/2023/11/Taewondo-6.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Võ Taekwondo VKU (TKD)) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/VMC-5.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Âm nhạc VKU) 
+                             </div>
+                        </div>  
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/Esport-2-scaled-e1699757353885-2048x1041.jpg" alt="New York" class="d-block" style="width:100%;height: 650px; ">
+                        <div class="carousel-caption">
+                            <div class="card">
+                                (Ảnh: Câu lạc bộ Thể thao điện tử VKU) 
+                             </div>
+                        </div>  
+                      </div>
+                      
+                    </div>
+                    
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
+                  
+            </div>
+        
+   
+</div>
+</div>
+</div>
+<div style="height: 150px;"></div>
+<!-- hoat dong sinh vien  -->
+ <div class="content hidden">
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="title"><i class="fa-solid fa-globe"></i> Tin tức hoạt động</div><br>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="box-tt">
+            <img src="/Picture/tt1.jpg" alt="">
+            <div class="time-hd">11/04/2024</div>
+            <a href="https://vku.udn.vn/sv-tin-tuc-hoat-dong/vku-le-xuat-quan-doan-the-thao-tham-du-dai-hoi-the-duc-the-thao-sinh-vien-dai-hoc-da-nang-lan-thu-xiii-2024/">VKU: Lễ xuất quân Đoàn thể thao tham dự Đại hội thể dục thể thao Sinh viên Đại học Đà Nẵng lần...</a>
+            <p>Sáng ngày 11/04/2024, Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng tổ chức Lễ xuất quân Đoàn thể thao tham dự Đại hội Thể dục...</p>
+        </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="box-tt">
+            <img src="/Picture/tt2.jpg" alt="">
+            <div class="time-hd">03/04/2024</div>
+            <a href="https://vku.udn.vn/tin-tuc-va-hoat-dong/vku-hop-tac-nlt-group-khanh-thanh-dua-vao-su-dung-phong-lab-thuc-nghiem-va-nghien-cuu-cong-nghe-moi-nham-dao-tao-nguon-nhan-luc-chat-luong-cao/">VKU hợp tác NLT Group khánh thành đưa vào sử dụng Phòng Lab thực nghiệm và nghiên cứu công nghệ mới...</a>
+            <p>Sáng ngày 03/04/2024, tại Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng sẽ diễn ra Lễ Khánh thành Phòng Lab thực nghiệm và nghiên cứu công nghệ mới...</p>
+        </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="box-tt">
+            <img src="/Picture/tt3.jpg" alt="">
+            <div class="time-hd">25/05/2024</div>
+            <a href="https://vku.udn.vn/tin-tuc-noi-bat/tung-bung-ngay-hoi-tuyen-dung-vku-job-fair-2024-nang-cao-ky-nang-tiep-can-co-hoi-nghe-nghiep-hoi-nhap-quoc-te/">Tưng bừng Ngày hội Tuyển dụng – VKU Job Fair 2024 – Nâng cao kỹ năng, tiếp cận cơ hội nghề...</a>
+            <p>Ngày 24/05/2024, Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng tổ chức Ngày hội tuyển dụng – VKU Job Fair 2024 tại khuôn viên...</p>
+        </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="box-tt">
+            <img src="/Picture/tt4.jpg" alt="">
+            <div class="time-hd">16/05/2024</div>
+            <a href="https://vku.udn.vn/sv-tin-tuc-hoat-dong/agribank-chi-nhanh-tan-chinh-nam-da-nang-trao-tang-hoc-bong-cho-sinh-vien-vku-co-hoan-canh-kho-khan/">Agribank Chi nhánh Tân Chính Nam Đà Nẵng trao tặng học bổng cho sinh viên VKU có hoàn cảnh...</a>
+            <p>Sáng ngày 16/05/2024, Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn (VKU), Đại học Đà Nẵng phối hợp với Ngân hàng Agribank Chi nhánh Tân Chính Nam....</p>
+        </div>
+        </div>
+      </div>
+   
+    </div>
+    <div class="col-md-5">
+      <div class="title"><i class="fa-regular fa-newspaper"></i> Tin tức mới nhất</div>
+      <div class="list-tt">
+        <div class="box-hd">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="/Picture/thamquan.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="boxx">
+              <p>28/05/2024</p>
+              <a href="https://vku.udn.vn/tin-tuc-va-hoat-dong/tham-quan-khong-gian-sang-tao-samsung-innovation-museum-sim/">Thăm quan không gian sáng tạo Samsung Innovation Museum (SIM)</a>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./Picture/kyunghee.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <div  class="boxx">
+              <p >29/05/2024</p>
+              <a href="https://vku.udn.vn/tin-tuc-va-hoat-dong/ky-ket-hop-tac-voi-kyung-hee-dai-hoc-danh-tieng-tai-han-quoc/">  Ký kết hợp tác với Kyung Hee – Đại học danh tiếng tại Hàn Quốc</a>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <img src="/Picture/tt3.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <div  class="boxx">
+              <p>25/05/2024</p>
+              <a href="https://vku.udn.vn/tin-tuc-noi-bat/tung-bung-ngay-hoi-tuyen-dung-vku-job-fair-2024-nang-cao-ky-nang-tiep-can-co-hoi-nghe-nghiep-hoi-nhap-quoc-te/">  Tưng bưng ngày hội tuyển dụng - VKU Job Fair 2024 - Nâng cao . . .</a>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <img src="/Picture/chip.jpg" alt="">
+          </div >
+          <div class="col-md-8">
+            <div  class="boxx">
+              <p>22/05/2024</p>
+              <a href="https://vku.udn.vn/tin-tuc-noi-bat/nha-cung-cap-chip-di-dong-lon-nhat-the-gioi-tham-va-lam-viec-voi-vku/">  Nhà cung cấp chip di động lớn nhất thế với thăm và làm việc với VKU</a>
+          </div>
+          </div>
+          
+          <div class="col-md-4">
+            <img src="/Picture/chip.jpg" alt="">
+          </div>
+          <div class="col-md-8">
+            <div  class="boxx">
+              <p>22/05/2024</p>
+              <a href="https://vku.udn.vn/tin-tuc-noi-bat/nha-cung-cap-chip-di-dong-lon-nhat-the-gioi-tham-va-lam-viec-voi-vku/">  Nhà cung cấp chip di động lớn nhất thế với thăm và làm việc với VKU</a>
+          </div>
+          </div>
+        </div>
+      </div>
+       
+          <!-- <div class="box-tt">
+              <img src="./Picture/tt6.jpg" alt="">
+              <div>
+                  <p>30/03/2024</p>
+                  <a href="https://vku.udn.vn/tin-tuc-noi-bat/vku-tiep-va-lam-viec-voi-pho-chu-tich-tap-doan-hanwha-life-quy-childfun-han-quoc-va-doan-cong-tac/">  VKU tiếp và làm việc với Đoàn công tác Quy ChildFund Korea</a>
+              </div>
+          </div>
+           -->
+          
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div style="height: 100px;"></div>
+<div class="content hidden">
+<div id="DN" ><p>Các Câu Lạc Bộ - Đội - Nhóm</p></div>
+<div class="container mt-5" id="DoiNhom">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1920/https://vku.udn.vn/wp-content/uploads/2024/05/Logo_VKU_new.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ AN TOÀN THÔNG TIN <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000/https://vku.udn.vn/wp-content/uploads/2023/11/VIC.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ LẬP TRÌNH <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSC <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_958/https://vku.udn.vn/wp-content/uploads/2023/11/VSC.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ SINH VIÊN KHỞI NGHIỆP  <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSC <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1000/https://vku.udn.vn/wp-content/uploads/2023/11/FLC.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ NGOẠI NGỮ <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: FLC <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/Karate.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ VÕ THUẬT KARATE VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_960/https://vku.udn.vn/wp-content/uploads/2023/11/CLV.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ CẦU LÔNG VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/Logo_VSVC.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ BÓNG CHUYỀN SINH VIÊN VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_504/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-Basketball.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ BÓNG RỔ VIỆT - HÀN <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1500/https://vku.udn.vn/wp-content/uploads/2023/11/VM.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ TRUYỀN THÔNG VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1457/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-VSC.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ KỸ NĂNG VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/VBC.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ SÁCH VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1024/https://vku.udn.vn/wp-content/uploads/2023/11/VOI.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ ĐỌC BẢN TIN TIẾNG ANH VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1640/https://vku.udn.vn/wp-content/uploads/2023/11/Taewondo.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ VÕ TEAKWONDO VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_777/https://vku.udn.vn/wp-content/uploads/2023/11/ESPORT.png" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ THỂ THAO ĐIỆN TỬ VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_311/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-Nhip-dieu-tre-e1699716164490.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ NHỊP ĐIỆU TRẺ <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1350/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-VMC.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: CÂU LẠC BỘ ÂM NHẠC VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2048/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-VSA-2048x2048.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: ĐỘI VĂN NGHỆ XUNG KÍCH VKU <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <div class="card-title" style="text-align: center; margin-top: 20px;">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_662/https://vku.udn.vn/wp-content/uploads/2023/11/Logo-HIH.jpg" alt="" style="width: 120px; height: 120px;">
+                </div>
+                <div class="card-body">
+                    <p>Tên tiếng Việt: NHÓM TỪ THIỆN HAND IN HAND VIỆT <br>
+
+                        Tên tiếng Anh: VKU Security Lab <br>
+                        
+                        Tên viết tắt: VSL <br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div style="height: 150px;"></div>
+
+<!-- vd  -->
+<!-- chinh sach ho tro  -->
+ <div class="content hidden">
+ <div class="container">
+
+  <div class="row">
+    <div class="col-md-5">
+      <div class="cs">
+        <div class="title"><i class="fa-regular fa-newspaper"></i> Chính sách sinh viên</div><br>
+        <div class="list-cs">
+            <div class="box-hd box-cs">
+                <img src="/Picture/cs1.png" alt=""> <br>
+                <div class="abc">
+                  <a href="https://vku.udn.vn/event/doi-tuong-duoc-huong-chinh-sach-mien-giam-hoc-phi/">Đối tượng được hưởng chính sách Miễn, Giảm học phí</a>
+                </div>
+                </div>
+            <div class="box-hd box-cs">
+                <img src="/Picture/cs2.png" alt=""> <br>
+               
+                <div class="abc">
+                  <a href="https://vku.udn.vn/event/doi-tuong-duoc-huong-chinh-sach-tro-cap-xa-hoi/">Đối tượng được hưởng chính sách Trợ cấp xã hội </a>
+                </div>
+              </div>
+            <div class="box-hd box-cs">
+                <img src="/Picture/cs3.png" alt=""> <br>
+               
+                
+                <div class="abc">
+                  <a href="https://vku.udn.vn/event/doi-tuong-duoc-huong-ho-tro-chi-phi-hoc-tap-ho-tro-hoc-tap/">Đối tượng được hưởng Hỗ trợ chi phí học tập, Hỗ trợ học tập</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-7">
+      <div class="sv">
+        <div class="title"><i class="fa-solid fa-users"></i> Sinh viên tiêu biểu</div>
+        <div class="list-sv">
+            <div class="box-sv">
+               
+                <div class="row">
+                
+                  <div class="col-md-4"><div class="info-sv">
+                    <div class="img-sv">
+                      <img src="/Picture/sv1.png" alt="" class="vokhung">
+                      <img src="/Picture/sv1-1.png" alt=""  class="anh" >
+                  </div>
+                    <div class="name-sv" style="color: red">Lê Quang Nhã</div>
+                    <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư) - Chương trình toàn cầu</p></div>
+                    <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                    <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                </div>
+               </div>
+                  <div class="col-md-4"> 
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv2-2.png" alt=""  class="anh" >
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Nguyễn Hữu Chương</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Khoa học dữ liệu và trí tuệ nhân tạo (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt=""  class="vokhung">
+                          <img src="/Picture/sv3-3.png" alt=""  class="anh">
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Nguyễn Khánh Huyền</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> CN Mạng và An toàn thông tin (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                     </div>
+                  <div class="col-md-4">
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt=""  class="vokhung">
+                          <img src="/Picture/sv4-4.png" alt=""  class="anh">
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Trần Thảo Nguyên</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv5-5.png" alt=""  class="anh">
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Nguyễn Trần Huy Vũ</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4"> 
+
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv6-6.png" alt=""  class="anh" >
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Lê Kim Hoàng Trung</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4"> 
+
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv7.png" alt=""  class="anh">
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Lê Tăng Phú Quý</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư) - Chương trình toàn cầu</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv8.png" alt="" class="anh" >
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Hồ Thanh Phong</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư)</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="box-sv">
+                      <div class="img-sv">
+                          <img src="/Picture/sv1.png" alt="" class="vokhung">
+                          <img src="/Picture/sv9.png" alt=""  class="anh">
+                      </div>
+                      <div class="info-sv">
+                          <div class="name-sv" style="color: red">Nguyễn Quang Chung</div>
+                          <div class="mini-sv"><p><span>Ngành:</span> Công nghệ thông tin (Kỹ sư) - Chương trình toàn cầu</p></div>
+                          <div class="mini-sv"><p><span>Khoa:</span> Khoa học máy tính</p></div>
+                          <div class="mini-sv"><p><span>Niên khóa:</span> 2022 - 2026</p></div>
+                      </div>
+                  </div>
+                  </div>
+
+                </div>
+                
+            </div>
+           
+           
+          
+           
+           
+           
+            
+           
+        </div>
+    </div>
+    </div>
+  </div>
+ </div>
+</div>
+
+<!-- footer  -->
+<div class="footer mt-5">
+    <div class="row">
+      <div class="col-md-4 ms-4">
+        <p><button>Địa chỉ</button></p>
+        <div id="Lien_He">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg> 470 Trần Đại Nghĩa, Q. Ngũ Hành Sơn, Tp. Đà Nẵng</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg> 0236.3.667.117</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+        </svg> info@vku.udn.vn</p>
+      </div>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.733396391822!2d108.24978007490205!3d15.975293084690728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sVietnam%20-%20Korea%20University%20of%20Information%20and%20Communication%20Technology!5e0!3m2!1sen!2s!4v1716051186806!5m2!1sen!2s"
+           width="250" height="200" style="border:0;"
+           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+           <p><button>Kết nối với chúng tôi</button></p>
+           <div><ul class="example-2">
+            <li class="icon-content">
+              <a
+                href="https://linkedin.com/"
+                aria-label="LinkedIn"
+                data-social="linkedin"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">LinkedIn</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">GitHub</div>
+            </li>
+            <li class="icon-content">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                data-social="instagram"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Instagram</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Youtube</div>
+            </li>
+          </ul></div>
+      </div>
+      <div class="col-md-4 " id="Khoa_ThuVien">
+        <div><button>KHOA-VIỆN</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Khoa Khoa học máy tính</a></li>
+            <li><a href="#">Khoa Kỹ thuật máy tính và Điện tử</a></li>
+            <li><a href="#">Khoa Kinh tế số & TMĐT</a></li>
+            <li><a href="#">Viện Khoa học và Công nghệ số</a></li>
+            <li><a href="#">Tổ Cơ bản</a></li>
+            <li><a href="#">Phòng Khảo thí - ĐBCLGD</a></li>
+            <li><a href="#">Phòng Thanh tra - Pháp chế</a></li>
+            <li><a href="#">Phòng Cơ sở vật chất</a></li>
+            <li><a href="#">Phòng Kế hoạch - Tài chính</a></li>
+           
+
+          </ul>
+        </div>
+        <div><button>PHÒNG</button></div>
+        <ul>
+          <li><a href="#">Phòng Tổ chức - Hành chính</a></li>
+          <li><a href="#">Phòng Đào tạo</a></li>
+          <li><a href="#">Phòng Công tác sinh viên</a></li>
+          <li><a href="#">Phòng KHCN - HTQT</a></li>
+         
+         
+
+        </ul>
+      </div>
+
+      <div class="col-md-3 " id="TrungTam">
+        <div><button>TRUNG TÂM</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Trung tâm Học liệu và Truyền thông</a></li>
+            <li><a href="#">Trung tâm Ngoại ngữ - Tin học</a></li>
+            <li><a href="#">Trung tâm Quản trị và Phát triển CNTT</a></li>
+            <li><a href="#">Tổ Quản lý Ký túc xá - Phục vụ cộng đồng</a></li>
+          </ul>
+        </div>
+        <div><button>ĐOÀN THỂ</button></div>
+        <ul>
+          <li><a href="#">Đảng bộ</a></li>
+          <li><a href="#">Công đoàn</a></li>
+          <li><a href="#">Đoàn thanh niên</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div >
+    <div style="width: 100%; height: 50px; background-color: rgb(25, 25, 138);"></div>
+  </div>
+
+
+  <!-- hieu ung  -->
+  <script>
+    $(document).ready(function() {
+        $('.content').waypoint(function() {
+            $(this.element).addClass('visible');
+        }, { offset: '75%' });
+    });
+  </script>
+</body>
+</html>

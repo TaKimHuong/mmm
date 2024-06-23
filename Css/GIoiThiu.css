@@ -1,0 +1,301 @@
+@charset "utf-8";
+#PhuongCham{
+    background-image: url('../Picture/VKU-Gt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+.nav-link{
+    color: rgb(47, 26, 152);
+    font-weight: bold;
+    width: 100px;
+    text-align: justify;
+}
+
+#button{
+    color: rgb(47, 26, 152);
+    font-weight: bold;
+    border: 0;
+    text-align: left;
+      
+  }
+  .nav-link:hover , #button:hover{
+      color: rgb(24, 22, 22);
+      border-bottom: 4px solid rgb(238, 238, 244);
+      border-radius: 0;  
+  }
+
+#MoDau, #VatChat p{
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+#card{
+    background-color: #05639e;
+    padding: 40px;
+    margin-top: 70px;
+    border: 3px solid rgb(251, 255, 14);
+}
+#card p{
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#GT p{
+    text-align: center;
+    font-size: small;
+}
+#TC img{
+    border-radius: 10px;
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+.ct .card, #Card {
+    position: absolute;
+    margin-top: -20%;
+    color: rgb(207, 70, 70);
+    margin-left: 5%;
+    padding: 15px;
+    opacity: 0.8;
+
+    border: 2px solid rgb(37, 126, 154);
+}
+/* su menh tam nhin  */
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #EE0000;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    border: 2px solid rgb(22, 112, 181) ;
+    margin-top: 40px;
+   }
+   
+   #bottone1:hover {
+    box-shadow: 10px 10px 56px -14px #33CCFF;
+   }
+   
+   #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #C3D900;
+   }
+   .vd{
+    padding: 20px;
+    border: 4px solid rgb(2, 96, 167);
+   }
+   .vd p{
+    text-align: justify;
+   }
+
+   /* nut top  */
+   #topBtn {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+#topBtn:hover {
+    background-color: #333;
+    border:1px solid black;
+}
+#VatChat img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+/* carousel  */
+#KiTucXa .card{
+    padding: 20px;
+    opacity: 0.6;
+    text-align: justify;
+    border: 2px solid rgb(20, 98, 141);
+   
+}
+
+/* footer  */
+.footer{
+    background-color: #0274b3;
+    height: 100%;
+   }
+   .footer button{
+     width: 200px;
+     height: 50px;
+     border-radius: 5px;
+     background-color: rgb(230, 238, 13);
+     color: rgb(54, 20, 190);
+     font-size: 16px;
+     font-weight: bold;
+     border: 1px solid white;
+     margin-top: 10px;
+   }
+   #Lien_He{
+     color: rgb(255, 255, 255);
+     font-size: 14px;
+   }
+   /* ket noi voi chung toi  */
+   ul {
+     list-style: none;
+   }
+   
+   .example-2 {
+     display: flex;
+     margin-top: 40px;
+    
+     
+   }
+   .example-2 .icon-content {
+     margin: 0 10px;
+     position: relative;
+   }
+   .example-2 .icon-content .tooltip {
+     position: absolute;
+     top: -30px;
+     left: 50%;
+     transform: translateX(-50%);
+     color: #fff;
+     padding: 6px 10px;
+     border-radius: 5px;
+     opacity: 0;
+     visibility: hidden;
+     font-size: 14px;
+     transition: all 0.3s ease;
+   }
+   .example-2 .icon-content:hover .tooltip {
+     opacity: 1;
+     visibility: visible;
+     top: -50px;
+   }
+   .example-2 .icon-content a {
+     position: relative;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     color: #4d4d4d;
+     background-color: #fff;
+     transition: all 0.3s ease-in-out;
+   }
+   .example-2 .icon-content a:hover {
+     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+   }
+   .example-2 .icon-content a svg {
+     position: relative;
+     z-index: 1;
+     width: 30px;
+     height: 30px;
+   }
+   .example-2 .icon-content a:hover {
+     color: white;
+   }
+   .example-2 .icon-content a .filled {
+     position: absolute;
+     top: auto;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 0;
+     background-color: #000;
+     transition: all 0.3s ease-in-out;
+   }
+   .example-2 .icon-content a:hover .filled {
+     height: 100%;
+   }
+   
+   .example-2 .icon-content a[data-social="linkedin"] .filled,
+   .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+     background-color: #0274b3;
+   }
+   
+   .example-2 .icon-content a[data-social="github"] .filled,
+   .example-2 .icon-content a[data-social="github"] ~ .tooltip {
+     background-color: #24262a;
+   }
+   .example-2 .icon-content a[data-social="instagram"] .filled,
+   .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+     background: linear-gradient(
+       45deg,
+       #405de6,
+       #5b51db,
+       #b33ab4,
+       #c135b4,
+       #e1306c,
+       #fd1f1f
+     );
+   }
+   .example-2 .icon-content a[data-social="youtube"] .filled,
+   .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+     background-color: #ff0000;
+   }
+   /* khoa thu vien  */
+   #Khoa_ThuVien button{
+     width: 150px;
+     height: 50px;
+     background-color: red;
+     color: white;
+     font-weight: bold;
+     margin-top: 10px;
+    
+   }
+   #Khoa_ThuVien ul li a{
+     text-decoration: none;
+     color: rgb(241, 241, 247);
+     font-size: 14px;
+   
+   
+   }
+   #Khoa_ThuVien ul li{
+     margin-top: 10px;
+   }
+   #Khoa_ThuVien ul{
+     margin-left: -30px;
+   }
+   #Khoa_ThuVien ul li a:hover{
+     color: black;
+     
+   }
+   #TrungTam button{
+     width: 150px;
+     height: 50px;
+     background-color: rgb(243, 216, 10);
+     color: rgb(12, 22, 142);
+     font-weight: bold;
+    margin-top: 10px;
+   }
+   #TrungTam ul li a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-size: 14px;
+     
+   
+   }
+   #TrungTam ul li{
+     margin-top: 10px;
+    
+   }
+   #TrungTam ul{
+     margin-left: -20px;
+   }
+   #TrungTam ul li a:hover{
+     color: red;
+     
+   }

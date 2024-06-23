@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuyển sinh riêng</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../Css/tuyenSinh.css" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../js/turn.min.js"></script>
+<style>
+  tr:nth-child(even) {
+    background-color: rgb(227, 238, 240);
+  }
+  /* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+.input__email {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-family: inherit;
+  box-shadow: 0 0 0 1px #f8bfbf;
+  border: none;
+  border-radius: 25px;
+  background-color: #fff5f5;
+  transition: all .3s;
+}
+
+.input__email::placeholder {
+  color: #ce9797;
+  font-size: 14px;
+}
+
+.input__email:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1px #ee8c8c;
+  border: none;
+  transition: all .3s;
+}
+
+
+
+</style>
+<body>
+ 
+
+
+   
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-primary bg-warning sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"><img src="/Picture/logo_Footer.jpg" alt="" style="width: 50px; height: 50px;"></a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./../index.html">
+                  Giới thiệu
+                </a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Tin tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Demo/TrangDaoTao.html">Đào tạo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Demo/SinhVien.html">Sinh viên</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Demo/tuyenSinhRieng.html">Tuyển sinh</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Liên hệ</a>
+
+                <ul class="dropdown-menu">
+                  <li> <a href="/Demo/index.html">Đăng Ký</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li> <a href="/Demo/dangnhap.html">Đăng Nhập</a>
+                    
+                </li>
+                </ul>
+              </li>
+          </ul>
+        <form class="d-flex">
+          <div class="navigation-card">
+            <a href="#" class="tab">
+              <svg
+                class="svgIcon"
+                viewBox="0 0 104 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z"
+                  stroke="black"
+                  stroke-width="7"
+                ></path>
+              </svg>
+            </a>
+          
+            <a href="/Demo/dangnhap.html" class="tab">
+              <svg
+                width="104"
+                height="100"
+                viewBox="0 0 104 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="21.5"
+                  y="3.5"
+                  width="60"
+                  height="60"
+                  rx="30"
+                  stroke="black"
+                  stroke-width="7"
+                ></rect>
+                <g clip-path="url(#clip0_41_27)">
+                  <mask
+                    id="mask0_41_27"
+                    style="mask-type:luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="61"
+                    width="104"
+                    height="52"
+                  >
+                    <path
+                      d="M0 113C0 84.2812 23.4071 61 52.1259 61C80.706 61 104 84.4199 104 113H0Z"
+                      fill="white"
+                    ></path>
+                  </mask>
+                  <g mask="url(#mask0_41_27)">
+                    <path
+                      d="M-7 113C-7 80.4152 19.4152 54 52 54H52.2512C84.6973 54 111 80.3027 111 112.749H97C97 88.0347 76.9653 68 52.2512 68H52C27.1472 68 7 88.1472 7 113H-7ZM-7 113C-7 80.4152 19.4152 54 52 54V68C27.1472 68 7 88.1472 7 113H-7ZM52.2512 54C84.6973 54 111 80.3027 111 112.749V113H97V112.749C97 88.0347 76.9653 68 52.2512 68V54Z"
+                      fill="black"
+                    ></path>
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_41_27">
+                    <rect
+                      width="104"
+                      height="39"
+                      fill="white"
+                      transform="translate(0 61)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          
+            <a href="#" class="tab">
+              <svg
+                width="101"
+                height="114"
+                viewBox="0 0 101 114"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="46.1726"
+                  cy="46.1727"
+                  r="29.5497"
+                  transform="rotate(36.0692 46.1726 46.1727)"
+                  stroke="black"
+                  stroke-width="7"
+                ></circle>
+                <line
+                  x1="61.7089"
+                  y1="67.7837"
+                  x2="97.7088"
+                  y2="111.784"
+                  stroke="black"
+                  stroke-width="7"
+                ></line>
+              </svg>
+            </a>
+          </div>
+          
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+
+    </div>
+
+    <div class="container-fluid mt-5 mb-5" id="Tra_Cuu_Diem"> 
+      <div id="TraCuu">
+        <p>Tra cứu điểm các năm</p> 
+        <button id="Quay_Lai">
+          <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+          <span><a href="trangChu.html">Home</a></span>
+          
+        </button>
+     
+      </div>
+    
+    
+    </div>
+
+    <!-- tim kiem cac nganh  -->
+    <div class="container mt-5">
+      <!-- <input type="text" style="margin-top: 30px;" id="searchInput" placeholder="Nhập danh mục tìm kiếm"> -->
+      <input type="text" id="searchInput" name="email-id" class="input__email" placeholder="Nhập danh mục tìm kiếm" required="">
+    <div style="width: 100%; height: 100px; background-color: white;"></div>
+    <table id="myTable">
+      <tr>
+        <th rowspan="2">STT</th>
+        <th rowspan="2">Ngành </th>
+        <th colspan="2">2021</th>
+        <th colspan="2">2022</th>
+        <th colspan="2">2023</th>
+      </tr> 
+      <tr>
+        <th>THPT</th>
+        <TH>Học bạ</TH>
+        <th>THPT</th>
+        <th>Học bạ</th>
+        <th>THPT</th>
+        <TH>Học bạ</TH>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Quản trị kinh doanh</td>
+        <td>22.5</td>
+        <td>21</td>
+        <td>24</td>
+        <td>24</td>
+        <td>23</td>
+        <td>24.5</td>
+        <!-- <td>Chuyên ngành Quản trị Logistics và chuỗi cung ứng số</td>
+        <td>Chuyên ngành Quản trị dịch vụ du lịch và lữ hành số</td> -->
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Chuyên ngành Logistics và chuỗi cung ứng số</td>
+        <td>23</td>
+        <td>22</td>
+        <td>25</td>
+        <td>25</td>
+        <td>23</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Chuyên ngành Quản trị dịch vụ du lịch và lữ hành số</td>
+        <td>20.5</td>
+        <td>20.5</td>
+        <td>23</td>
+        <td>25</td>
+        <td>22.5</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Chuyên ngành Marketing kỹ thuật số</td>
+        <td>-</td>
+        <td>-</td>
+        <td>24</td>
+        <td>25</td>
+        <td>23</td>
+        <td>25.5</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Chuyên ngành Quản trị Tài chính số</td>
+        <td>-</td>
+        <td>-</td>
+        <td>22</td>
+        <td>24</td>
+        <td>22.5</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Chuyên ngành Quản trị Dự án CNTT</td>
+        <td>-</td>
+        <td>-</td>
+        <td>20.05</td>
+        <td>24</td>
+        <td>23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Công nghệ kỹ thuật máy tính(kỹ sư)</td>
+        <td>20</td>
+        <td>18.5</td>
+        <td>23</td>
+        <td>24</td>
+        <td>23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Công nghệ kỹ thuật máy tính (cử nhân)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>23</td>
+        <td>24</td>
+        <td>23.09</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Công nghệ thông tin(Kỹ sư)</td>
+        <td>23</td>
+        <td>21.5</td>
+        <td>25</td>
+        <td>25</td>
+        <td>25.01</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Công nghệ thông tin(cử nhân) </td>
+        <td>-</td>
+        <td>-</td>
+        <td>24</td>
+        <td>24.5</td>
+        <td>23.5</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Công nghệ thông tin (cử nhân - hợp tác doanh nghiệp)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>24</td>
+        <td>24.5</td>
+        <td>23</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Chuyên ngành Khoa học dữ liệu và Trí tuệ nhân tạo (Kỹ sư)</td>
+        <td>21.05</td>
+        <td>20</td>
+        <td>24</td>
+        <td>25</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Trí tuệ nhân tạo (Kỹ sư)</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>25.01</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Chuyên ngành Thiết kế mỹ thuật số (kỹ sư)</td>
+        <td>21.5</td>
+        <td>20.5</td>
+        <td>23</td>
+        <td>25</td>
+        <td>24</td>
+        <td>24.5</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Chuyên ngành Mạng và an toàn thông tin</td>
+        <td>-</td>
+        <td>-</td>
+        <td>23</td>
+        <td>25</td>
+        <td>23</td>
+        <td>25</td>
+      </tr>
+    </table>
+    </div>
+
+
+    <!-- co the ban quan tam  -->
+    <div style="background-color: #F8F8FF; margin-top: 50px;">
+      <p style="color: rgb(11, 11, 147); font-weight: bold; font-size: 35px; text-align: center;">Có thể bạn quan tâm</p>
+      <p style="text-align: center; margin-top: 20px; color: rgb(16, 78, 148);">TỰ HÀO LÀ TRƯỜNG ĐẠI HỌC CÔNG LẬP HÀNG ĐẦU VÀ DUY NHẤT TẠI MIỀN TRUNG - TÂY NGUYÊN <br>
+        ĐÀO TẠO CHUYÊN SÂU CÔNG NGHỆ THÔNG TIN - TRUYỀN THÔNG VÀ KINH TẾ SỐ</p>
+        <div class="container">
+          <div class="row" id="QuanTam">
+            <div class="col-md-4 qt">
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-pc" viewBox="0 0 16 16">
+                <path d="M5 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm.5 14a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1m2 0a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1M5 1.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5M5.5 3h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Công cụ tính điểm xét học bạ</p>
+              <p style="text-align: center;">Hỗ trợ thí sinh tính điểm học bạ dựa vào điểm học tập THPT</p>
+            </div>
+            <div class="col-md-4 qt" >
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Tra cứu đối tượng ưu tiên</p>
+              <p style="text-align: center;">Kiểm tra bạn có thuộc đối tượng ưu tiên hay không?</p>
+            </div>
+            <div class="col-md-4 qt" >
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-stickies" viewBox="0 0 16 16">
+                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1z"/>
+                <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293z"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Hướng dẫn điền phiếu</p>
+              <p style="text-align: center;">Phiếu đăng ký xét tuyển thực sự làm bạn khó khăn</p>
+            </div>
+            <div class="col-md-4 qt" >
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Câu hỏi thường gặp</p>
+              <p style="text-align: center;">Những vấn đề mà thí sinh gặp phải khi tham gia xét tuyển và nhập học</p>
+            </div>
+            <div class="col-md-4 qt" >
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Hoạt động Đoàn</p>
+              <p style="text-align: center;">Cuộc sống sinh viên không thể thiếu những hoạt động đoàn bổ ích</p>
+            </div>
+            <div class="col-md-4 qt" >
+              <p style="margin-top: 25px; text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg></p>
+              <p class="mn" style="text-align: center; font-size: 25px; font-weight: bold;">Câu lạc bộ</p>
+              <p style="text-align: center;">Xây dựng các kỹ năng mềm cho bản thân bằng cách tham gia các CLB Kỹ năng </p>
+            </div>
+          </div>
+        </div>
+    </div>
+<div style="background-color: white; width: 100%; height: 70px;"></div>
+<div><p style="text-align: center; font-weight: bold; font-size: 35px; color: rgb(11, 11, 170);">Sổ tay sinh viên VKU</p></div>
+    <!-- so tay sinh vien vku  -->
+    <div style="background-color: #F8F8FF;">
+    <div class="container">
+<div id="magazine">
+	<div style="background-image:url(/Picture/Tuyen_Sinh_VKU.jpg);"></div>
+	<div style="background-image:url(/Picture/1.-TS-2024-scaled.jpg);"></div>
+	<div style="background-image:url(/Picture/to-hop-mon.jpg);"></div>
+	<div style="background-image:url(/Picture/diem-vku.webp);"></div>
+	<div style="background-image:url(/Picture/tsr2024.jpg);"></div>
+	<div style="background-image:url(/Picture/tttt.jpg);"></div>
+	<div style="background-image:url(/Picture/phuong-an-ts.jpg);"></div>
+	<div style="background-image:url(/Picture/VKU_IMG-35.jpeg);"></div>
+	<div style="background-image:url(/Picture/Media-42.jpg);"></div>
+	<div style="background-image:url(/Picture/hoc-sinh-xuat-sac-vku.jpg);"></div>
+	<div style="background-image:url(/Picture/totnghiepvku.jpg);"></div>
+	<!-- <div style="background-image:url(../VKU_News/magazine/pages/03.jpg);"></div>
+	<div style="background-image:url(../VKU_News/magazine/pages/03.jpg);"></div> -->
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+
+	$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#magazine').turn('previous');
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+			
+	});
+
+</script>
+    <!-- <div class="container-fluid mt-5">
+      <div class="footer">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="head">Liên hệ</p>
+            <div class="main">
+            <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+            </svg>  470 Trần Đại Nghĩa, Q. Ngũ Hành Sơn, Tp. Đà Nẵng </p>
+            <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg> 0236 3 667 113</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-arrow-down-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+              <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+            </svg>  tuyensinh@vku.udn.vn</p>
+          </div>
+          </div>
+          <div class="col-md-4">
+
+            <p  class="head">Liên kết</p>
+            <div class="main">
+            <p><a href="#">Trang chủ VKU</a></p>
+            <p><a href="#">Khoa Khoa học máy tính</a></p>
+            <p><a href="#">Khoa Kỹ thuật máy tính và điện tử</a></p>
+            <p><a href="#">Khoa Kinh Tế số & TMĐT</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p  class="head">Đăng ký nhận thông báo qua Email</p>
+            <p style="margin-right: 20px;"> <input type="email" id="searchInput" name="email-id" class="input__email" placeholder="Nhập Email của bạn" required="" ></p>
+            <p style="text-align: center;"><button id="bt">Đăng ký</button></p>
+            <p style="margin-top: 50px;">
+              <ul class="example-2">
+                <li class="icon-content">
+                  <a
+                    href="https://www.spotify.com/"
+                    aria-label="Spotify"
+                    data-social="spotify"
+                  >
+                    <div class="filled"></div>
+                    <svg version="1.1" viewBox="0 0 100 100">
+                      <path
+                        d="M50,4C24.7,4,4,24.7,4,50s20.6,46,46,46s46-20.6,46-46S75.4,4,50,4z M71.6,71.5c0,0,0,0.1-0.1,0.1c-0.8,1.2-2,1.8-3.2,1.8  c-0.7,0-1.4-0.2-2-0.6c-10.2-6.3-23.3-7.7-38.8-4.1c-2.1,0.6-4-0.9-4.5-2.7c-0.6-2.3,0.9-4.1,2.7-4.6c17.7-4,32.6-2.3,44.4,5  c0.9,0.4,1.5,1,1.8,1.9C72.2,69.3,72.1,70.5,71.6,71.5z M76.9,59.3L76.9,59.3c-0.8,1.1-1.9,1.9-3.2,2.1c-0.2,0-0.5,0.1-0.7,0.1  c-0.8,0-1.6-0.3-2.3-0.7c-12-7.3-30.1-9.4-43.9-5c-2.5,0.6-5-0.7-5.6-3c-0.6-2.5,0.7-4.9,3-5.5c16.5-5,37.2-2.5,51.4,6.2  c0.8,0.4,1.5,1.3,1.8,2.5C77.9,57,77.6,58.3,76.9,59.3z M83.2,45.6c-1,1.4-2.7,2.1-4.4,2.1c-0.9,0-1.9-0.2-2.7-0.7c0,0,0,0,0,0  c-13.9-8.3-37.8-9.3-51.4-5.1c-2.7,0.8-5.5-0.7-6.4-3.3c-0.8-2.7,0.7-5.6,3.3-6.4c16.2-4.8,43-3.8,59.8,6.2  C83.8,39.6,84.7,42.9,83.2,45.6C83.3,45.5,83.3,45.5,83.2,45.6z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Spotify</div>
+                </li>
+                <li class="icon-content">
+                  <a
+                    href="https://www.pinterest.com/"
+                    aria-label="Pinterest"
+                    data-social="pinterest"
+                  >
+                    <div class="filled"></div>
+                    <svg version="1.1" viewBox="0 0 100 100" xml:space="preserve">
+                      <path
+                        d="M83,17.8C74.5,8.9,63.4,4.3,50,4.1C37.7,4.2,26.8,8.6,17.9,17.3C8.9,26,4.3,37,4.1,50c0,0,0,0,0,0c0,9.1,2.5,17.4,7.4,24.9  c4.9,7.4,11.6,13.2,20.1,17.1c0.3,0.1,0.7,0.1,1-0.1c0.3-0.2,0.5-0.5,0.5-0.8l0-4.9c0.1-2.1,0.7-5.3,1.7-9.5c1-4,1.7-6.7,1.9-7.6  c0.7-3,1.7-7.2,3-12.6c0.1-0.2,0-0.5-0.1-0.7c-0.4-0.8-1-2.6-1.5-6.6c0.1-2.7,0.8-5.2,2.1-7.3c1.2-2,3.1-3.1,5.7-3.5  c2,0.1,4.7,0.8,5.1,5.9c-0.1,1.8-0.8,4.5-1.9,8.1c-1.2,3.8-1.9,6.3-2.1,7.6c-0.7,2.5-0.2,4.8,1.5,6.8c1.6,1.9,3.8,2.9,6.5,3.1  c4.3-0.1,8.1-2.6,11.2-7.5c1.7-3,2.9-6.3,3.5-9.7c0.7-3.4,0.7-7.1,0-10.8c-0.7-3.8-2.2-7.1-4.5-9.8c0,0-0.1-0.1-0.1-0.1  c-4.3-3.7-9.5-5.3-15.6-5c-6,0.4-11.3,2.6-15.9,6.6c-2.9,3.2-4.8,7.1-5.7,11.6c-0.9,4.6,0,9.1,2.6,13.3c0.3,0.5,0.5,0.8,0.6,1  c0,0.3,0,1-0.5,2.8c-0.5,1.8-0.9,2.2-0.9,2.2c0,0-0.1,0-0.1,0.1c0,0-0.2,0-0.4-0.1c-2.2-1-3.9-2.4-5.2-4.2c-1.3-1.9-2.1-4-2.5-6.3  c-0.3-2.5-0.4-5-0.3-7.5c0.2-2.5,0.7-5.1,1.4-7.7c3-6.9,8.5-11.9,16.3-14.8c7.8-2.9,16-3.2,24.3-0.8c6.5,2.8,11,7.4,13.6,13.7  c2.5,6.4,2.8,13.4,0.8,20.8c-2.2,7.1-6.4,12.4-12.1,15.7c-5.6,2.8-10.8,3-15.7,0.7c-1.8-1.1-3.1-2.3-3.9-3.5c-0.2-0.3-0.6-0.5-1-0.5  c-0.4,0.1-0.7,0.3-0.8,0.7c-0.7,2.7-1.3,4.7-1.6,6.2c-1.4,5.4-2.6,9.2-3.4,11c-0.8,1.6-1.6,3.1-2.4,4.3c-0.2,0.3-0.2,0.6-0.1,0.9  s0.3,0.5,0.6,0.6c4.3,1.3,8.7,2,13,2c12.4-0.1,23.2-4.6,32.1-13.4C91.1,73.9,95.8,62.9,96,50C95.9,37.5,91.5,26.7,83,17.8z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Pinterest</div>
+                </li>
+                <li class="icon-content">
+                  <a
+                    href="https://dribbble.com/"
+                    aria-label="Dribbble"
+                    data-social="dribbble"
+                  >
+                    <div class="filled"></div>
+                    <svg version="1.1" viewBox="0 0 100 100">
+                      <path
+                        d="M83.5,18.5C74.9,9.3,62.8,4,50.2,4c-6.1,0-12,1.1-17.6,3.4C15.2,14.5,4,31.3,4,50c0,13.9,6.2,26.9,17,35.7  C29.2,92.3,39.4,96,50,96c6.6,0,13.2-1.5,19.2-4.2c12.5-5.7,21.7-16.6,25.2-29.8C95.5,57.9,96,53.8,96,50  C96,38.3,91.6,27.1,83.5,18.5z M75,22.3c-0.7,0.9-1.4,1.8-2.1,2.6c-1.4,1.6-2.8,3-4.4,4.3c-0.3,0.3-0.6,0.6-1,0.8  c-1,0.9-2.1,1.7-3.2,2.5l-0.3,0.2c-1.1,0.7-2.2,1.5-3.5,2.2c-0.4,0.3-0.9,0.5-1.4,0.8c-0.8,0.5-1.7,0.9-2.7,1.4  c-0.6,0.3-1.2,0.5-1.8,0.8L54.3,38c-0.1,0-0.2,0.1-0.3,0.1c0,0,0,0,0,0c-1.3-2.6-2.4-4.9-3.5-7l-0.3-0.5c-1.1-2-2.2-4-3.3-6  l-0.7-1.3c-1.1-1.9-2.2-3.7-3.2-5.4l-0.7-1.1c-0.7-1.2-1.4-2.3-2.2-3.5c3.2-0.8,6.5-1.3,9.8-1.3c9.4,0,18.4,3.5,25.4,9.8  C75.3,21.9,75.2,22.1,75,22.3z M46.4,40.6c-1.4,0.4-2.9,0.8-4.4,1.1c-0.3,0-0.7,0.1-0.9,0.2c-6,1-12.5,1.4-19.4,1.1  c-0.3,0-0.6,0-0.9,0c-0.3,0-0.5,0-0.7,0c-2.5-0.2-4.9-0.4-7.2-0.7c2.3-11.2,9.6-20.9,19.8-26.1c2.1,3.3,4.2,6.7,6.3,10.3l0.4,0.7  c0.9,1.6,1.9,3.4,3.2,5.8l0.6,1.2C44.4,36.6,45.4,38.6,46.4,40.6z M24.4,51.1c2.2,0.1,4.2,0,6.2-0.1l0.7,0c0.4,0,0.9,0,1.3,0  c2.8-0.2,5.5-0.5,8.5-1c0.5-0.1,1-0.2,1.6-0.3l0.5-0.1c2.2-0.4,4.2-0.9,6.1-1.4c0.1,0,0.3-0.1,0.4-0.1l0.5,1.1  c1.2,2.8,2.3,5.5,3.3,8.1c0,0,0,0,0,0c-0.2,0.1-0.5,0.2-0.7,0.2c-2,0.6-4,1.4-5.9,2.2c-0.6,0.3-1.3,0.5-1.9,0.8  c-1.4,0.6-2.7,1.3-4.1,2.1l-0.3,0.2c-0.2,0.1-0.5,0.2-0.6,0.4c-1.5,0.9-3.1,1.9-4.7,3c-0.2,0.1-0.4,0.3-0.6,0.4  c-0.2,0.1-0.4,0.3-0.6,0.5c-1,0.7-2,1.5-3,2.3c-0.4,0.3-0.7,0.6-1.1,0.9l-0.3,0.3c-0.7,0.6-1.5,1.3-2.2,1.9l-0.2,0.2  c-0.4,0.4-0.7,0.7-1.1,1.1l-0.2,0.2c-0.6,0.6-1.3,1.3-2,2l-0.4,0.4c-0.2,0.2-0.4,0.4-0.5,0.6C16.1,69.9,12,60.2,12,50.3  c0,0,0.1,0,0.1,0c0.4,0,0.7,0,1.1,0.1c3.5,0.4,6.9,0.6,10.3,0.7C23.8,51,24.1,51.1,24.4,51.1z M29.5,81.9c0.2-0.2,0.3-0.4,0.5-0.5  c1-1.1,2-2.1,3-3c1.9-1.8,3.8-3.3,5.7-4.8c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.2,0.5-0.4,0.8-0.6c1.1-0.8,2.2-1.5,3.4-2.2  c0.1-0.1,0.2-0.1,0.3-0.2c0.1-0.1,0.2-0.1,0.3-0.2c1.4-0.8,2.9-1.6,4.5-2.3c0.3-0.1,0.6-0.2,0.8-0.4l0.6-0.3  c1.1-0.5,2.2-0.9,3.5-1.4c0.5-0.2,1.1-0.4,1.7-0.6l0.2-0.1c0.4-0.1,0.7-0.2,1.1-0.3c0,0,0,0,0,0c1.1,3.2,2.3,6.4,3.3,9.8l0.1,0.4  c1.1,3.6,2,7.3,2.9,10.8C51.7,89.8,39.3,88.3,29.5,81.9C29.4,81.9,29.4,81.9,29.5,81.9z M65.6,62.9c0.7-0.1,1.3-0.2,2-0.2  c2-0.2,4-0.2,5.9-0.2c0.2,0,0.4,0,0.6,0l0.2,0c2.2,0.1,4.6,0.3,6.9,0.6c0.4,0.1,0.9,0.1,1.3,0.2l0.6,0.1c0.7,0.1,1.5,0.3,2.2,0.4  c-3,7.6-8.3,14-15.2,18.3c-0.8-3.1-1.7-6.2-2.6-9.2l-0.1-0.4c-0.9-3-1.9-6.1-3.1-9.5C64.8,63.1,65.2,63,65.6,62.9z M81.6,55.2  C80,55,78.4,54.9,77,54.8l-0.9-0.1c-0.9-0.1-1.9-0.1-2.8-0.2c-0.2,0-0.3,0-0.5,0c-0.2,0-0.4,0-0.6,0c-2,0-3.9,0.1-5.9,0.3  c-0.2,0-0.3,0-0.5,0.1c-0.1,0-0.2,0-0.3,0c-1.3,0.1-2.6,0.3-3.9,0.5c-0.1-0.1-0.1-0.3-0.2-0.4c-0.1-0.2-0.2-0.5-0.3-0.7  c-1.1-2.9-2.3-5.7-3.2-7.8l-0.3-0.6c-0.1-0.1-0.1-0.3-0.2-0.4c0,0,0,0,0.1,0c0.2-0.1,0.5-0.2,0.7-0.3c0.6-0.2,1.2-0.5,1.8-0.8  c1.2-0.5,2.4-1.2,3.6-1.8c0.1-0.1,0.3-0.2,0.5-0.2c0.2-0.1,0.5-0.2,0.7-0.4c1.5-0.9,2.9-1.8,4.2-2.7l0.3-0.2  c0.2-0.1,0.4-0.3,0.6-0.4c0.9-0.6,1.9-1.4,2.8-2.2c1.5-1.2,2.9-2.5,4.3-4c0.8-0.8,1.5-1.6,2.2-2.4l0.4-0.5c0.5-0.5,0.9-1.1,1.3-1.6  C85.5,34.3,88,42.1,88,50c0,2-0.2,4.1-0.5,6.1c-0.3,0-0.6-0.1-0.8-0.1c-0.4-0.1-0.7-0.1-1.1-0.2l-1.1-0.2  C83.5,55.5,82.5,55.3,81.6,55.2z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Dribbble</div>
+                </li>
+                <li class="icon-content">
+                  <a
+                    href="https://telegram.org/"
+                    aria-label="Telegram"
+                    data-social="telegram"
+                  >
+                    <div class="filled"></div>
+                    <svg version="1.1" viewBox="0 0 100 100">
+                      <path
+                        d="M95,9.9c-1.3-1.1-3.4-1.2-7-0.1c0,0,0,0,0,0c-2.5,0.8-24.7,9.2-44.3,17.3c-17.6,7.3-31.9,13.7-33.6,14.5  c-1.9,0.6-6,2.4-6.2,5.2c-0.1,1.8,1.4,3.4,4.3,4.7c3.1,1.6,16.8,6.2,19.7,7.1c1,3.4,6.9,23.3,7.2,24.5c0.4,1.8,1.6,2.8,2.2,3.2  c0.1,0.1,0.3,0.3,0.5,0.4c0.3,0.2,0.7,0.3,1.2,0.3c0.7,0,1.5-0.3,2.2-0.8c3.7-3,10.1-9.7,11.9-11.6c7.9,6.2,16.5,13.1,17.3,13.9  c0,0,0.1,0.1,0.1,0.1c1.9,1.6,3.9,2.5,5.7,2.5c0.6,0,1.2-0.1,1.8-0.3c2.1-0.7,3.6-2.7,4.1-5.4c0-0.1,0.1-0.5,0.3-1.2  c3.4-14.8,6.1-27.8,8.3-38.7c2.1-10.7,3.8-21.2,4.8-26.8c0.2-1.4,0.4-2.5,0.5-3.2C96.3,13.5,96.5,11.2,95,9.9z M30,58.3l47.7-31.6  c0.1-0.1,0.3-0.2,0.4-0.3c0,0,0,0,0,0c0.1,0,0.1-0.1,0.2-0.1c0.1,0,0.1,0,0.2-0.1c-0.1,0.1-0.2,0.4-0.4,0.6L66,38.1  c-8.4,7.7-19.4,17.8-26.7,24.4c0,0,0,0,0,0.1c0,0-0.1,0.1-0.1,0.1c0,0,0,0.1-0.1,0.1c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1  c0,0,0,0,0,0.1c-0.5,5.6-1.4,15.2-1.8,19.5c0,0,0,0,0-0.1C36.8,81.4,31.2,62.3,30,58.3z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="tooltip">Telegram</div>
+                </li>
+              </ul>
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div style="height: 30px;"></div>
+<div class="container-fluid">
+  <div class="footer">
+    <div class="row">
+      <div class="col-md-4 ms-4">
+        <!-- <p style="font-size: 20px; color: red; font-weight: bold;">Trường Đại học Công nghệ thông tin và Truyền thông Việt - Hàn</p> -->
+        <p><button>Địa chỉ</button></p>
+        <div id="Lien_He">
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg> 470 Trần Đại Nghĩa, Q. Ngũ Hành Sơn, Tp. Đà Nẵng</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg> 0236.3.667.117</p>
+        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+        </svg> info@vku.udn.vn</p>
+      </div>
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.733396391822!2d108.24978007490205!3d15.975293084690728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142108997dc971f%3A0x1295cb3d313469c9!2sVietnam%20-%20Korea%20University%20of%20Information%20and%20Communication%20Technology!5e0!3m2!1sen!2s!4v1716051186806!5m2!1sen!2s"
+           width="300" height="250" style="border:0;"
+           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+           <p><button>Kết nối với chúng tôi</button></p>
+           <div><ul class="example-2">
+            <li class="icon-content">
+              <a
+                href="https://linkedin.com/"
+                aria-label="LinkedIn"
+                data-social="linkedin"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">LinkedIn</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">GitHub</div>
+            </li>
+            <li class="icon-content">
+              <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                data-social="instagram"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Instagram</div>
+            </li>
+            <li class="icon-content">
+              <a href="https://youtube.com/" aria-label="Youtube" data-social="youtube">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-youtube"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+              <div class="tooltip">Youtube</div>
+            </li>
+          </ul></div>
+      </div>
+      <div class="col-md-4 " id="Khoa_ThuVien">
+        <div><button>KHOA-VIỆN</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Khoa Khoa học máy tính</a></li>
+            <li><a href="#">Khoa Kỹ thuật máy tính và Điện tử</a></li>
+            <li><a href="#">Khoa Kinh tế số & TMĐT</a></li>
+            <li><a href="#">Viện Khoa học và Công nghệ số</a></li>
+            <li><a href="#">Tổ Cơ bản</a></li>
+            <li><a href="#">Phòng Khảo thí - ĐBCLGD</a></li>
+            <li><a href="#">Phòng Thanh tra - Pháp chế</a></li>
+            <li><a href="#">Phòng Cơ sở vật chất</a></li>
+            <li><a href="#">Phòng Kế hoạch - Tài chính</a></li>
+           
+
+          </ul>
+        </div>
+        <div><button>PHÒNG</button></div>
+        <ul>
+          <li><a href="#">Phòng Tổ chức - Hành chính</a></li>
+          <li><a href="#">Phòng Đào tạo</a></li>
+          <li><a href="#">Phòng Công tác sinh viên</a></li>
+          <li><a href="#">Phòng KHCN - HTQT</a></li>
+         
+         
+
+        </ul>
+      </div>
+
+      <div class="col-md-3 " id="TrungTam">
+        <div><button>TRUNG TÂM</button></div>
+        <div>
+          <ul>
+            <li><a href="#">Trung tâm Học liệu và Truyền thông</a></li>
+            <li><a href="#">Trung tâm Ngoại ngữ - Tin học</a></li>
+            <li><a href="#">Trung tâm Quản trị và Phát triển CNTT</a></li>
+            <li><a href="#">Tổ Quản lý Ký túc xá - Phục vụ cộng đồng</a></li>
+            
+           
+
+          </ul>
+        </div>
+        <div><button>ĐOÀN THỂ</button></div>
+        <ul>
+          <li><a href="#">Đảng bộ</a></li>
+          <li><a href="#">Công đoàn</a></li>
+          <li><a href="#">Đoàn thanh niên</a></li>
+      
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div style="width: 100%; height: 50px; background-color: rgb(25, 25, 138);">h</div>
+</div>
+    <!-- nut back on top  -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    <script>
+      // Lấy ô nhập liệu và gán sự kiện input
+      document.getElementById("searchInput").addEventListener("input", function() {
+        // Lấy giá trị cần tìm từ ô nhập liệu
+        var searchValue = this.value.toLowerCase();
+  
+        // Lấy bảng
+        var table = document.getElementById("myTable");
+        var rows = table.getElementsByTagName("tr");
+  
+        // Duyệt qua các hàng và cột của bảng
+        for (var i = 2; i < rows.length; i++) {
+          var cells = rows[i].getElementsByTagName("td");
+          var found = false;
+  
+          for (var j = 0; j < cells.length; j++) {
+            if (cells[j].innerText.toLowerCase().includes(searchValue)) {
+              found = true;
+              break;
+            }
+          }
+  
+          // Ẩn hoặc hiện hàng dựa trên kết quả tìm kiếm
+          rows[i].style.display = found ? "" : "none";
+        }
+      });
+    </script>
+
+    <!-- nut back on top  -->
+    <script>
+      // Bước 3: Thêm JavaScript
+      var mybutton = document.getElementById("topBtn");
+  
+      // Khi người dùng cuộn xuống 20px từ đầu trang, hiển thị nút
+      window.onscroll = function() {
+          scrollFunction();
+      };
+  
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+  
+      // Khi người dùng nhấp vào nút, cuộn lên đầu trang
+      function topFunction() {
+          document.body.scrollTop = 0; // Đối với Safari
+          document.documentElement.scrollTop = 0; // Đối với Chrome, Firefox, IE và Opera
+      }
+  </script>
+</body>
+</html>
