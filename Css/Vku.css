@@ -986,7 +986,7 @@ margin-bottom: -10px;
   gap: 10px;
 }
 
-#inputField {
+#inputField, #phone {
   border: 2px solid rgb(97, 104, 190);
   background-color: transparent;
   border-radius: 10px;

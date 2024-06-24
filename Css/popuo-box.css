@@ -148,4 +148,16 @@ body{
 	color: #0099ff;
 	font-size: 9px;
   }
-  
+  .homee a{
+	text-decoration: none;
+	color: rgb(86, 3, 55);
+	font-weight: normal;
+  }
+  .homee{
+	margin-top: 5px;
+	margin-left: 10px;
+  }
+  #anhh{
+	width: 90%;
+	height: 90%;
+  }
